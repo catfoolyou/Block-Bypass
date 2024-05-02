@@ -2,7 +2,7 @@
 A list of functioning offline downloads for all of the stuff on my website after it got blocked.
 
 ## Lightspeed agent
-You can use the uploaded files to kill off Lightspeed agent and unblock any website as well as wss conncections to blocked domains, however this only works on Windows computers.
+You can use the uploaded `.bat` files to kill off Lightspeed agent and unblock any website as well as `wss://` (websocket) conncections to blocked domains, however this only works on Windows computers.
 
 ## Eaglercraft:
 The latest 1.5.2 and 1.8.8 offline clients are available for download. 
