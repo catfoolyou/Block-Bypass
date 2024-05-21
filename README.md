@@ -1,5 +1,7 @@
-# Block-Bypass
+# FCPS Tech exploits
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
+Credit to [CaenJones](https://github.com/CaenJones) for writeups on FCPS-specific exploits, and credit to [Mercury Workshop](https://mercurywork.shop/) for various Chromebook exploits, as well as 3kh0 for ext-remover
+
 These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 
 # Windows Laptops
@@ -17,7 +19,10 @@ It's practically impossible to run anything other than batchfiles on school comp
 To enter the BIOS (after unlocking ofc) you need to restart the laptop while holding shift.
 
 # Chromebooks
+Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
+The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)
 
+Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although the site is blocked so obtaining it could be a pain.
 
 # Browser games and other crap
 If [catfoolyou.github.io](https://catfoolyou.github.io) is blocked, a mirror of my website is available [here](https://eldritchdev2.github.io/Website-v2/)
