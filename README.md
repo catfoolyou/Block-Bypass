@@ -1,6 +1,10 @@
 # FCPS Tech exploits
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
-Credit to [CaenJones](https://github.com/CaenJones) for writeups on FCPS-specific exploits, and credit to [Mercury Workshop](https://mercurywork.shop/) for various Chromebook exploits, as well as [3kh0](https://github.com/3kh0) for ext-remover
+Credit to [CaenJones](https://github.com/CaenJones) for writeups on FCPS-specific exploits, [Mercury Workshop](https://mercurywork.shop/) and [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) for various Chromebook exploits, as well as [3kh0](https://github.com/3kh0) for ext-remover
+
+### Disclaimer
+
+Sh1mmer might not be working on FCPS chromebooks (I never tested lmao). You will probably need some way to bypass the Fog or the Tsunami. [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) might be useful.
 
 These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 
@@ -11,7 +15,7 @@ The first step is to disable Lightspeed agent.
 
 You can use the uploaded `.bat` files (`litspedagent.bat` and `test.bat`) to kill off Lightspeed agent and disable Classroom windows, respectively. This will unblock any website as well as `wss://` (websocket) conncections to blocked domains, as well as preventing admin from getting into your computer. However this only works on Windows computers, NOT ON CHROMEBOOKS. These were originally from [here](https://fcpsoff.github.io/lightspeed.html), though the website might be blocked or taken down entirely.
 
-An easy way to make sure that Lightspeed has been disabled is to check [this url](https://localhost:6543/block), it should show a "website down" error if you did evrything right and Lightspeed is actually dead.
+An easy way to make sure that Lightspeed has been disabled is to check [this url](https://localhost:6543/block), it should show a "website down" error if you did everything right and Lightspeed is actually dead.
 
 ## Applocker (Inability to install and/or run software)
 It's practically impossible to run anything other than batchfiles on school computers without fully reinstalling Windows. Either crack the BIOS password with [this](https://bios-pw.org/) or [this](http://www.biospassword.net/) (might be blocked, disable Lightspeed first), or you can take the back cover off the laptop and short the jumper pins to hard reset the BIOS password if the above sites don't give you working passwords. I would recommend making a backup image of your (unmodified) school Windows install and then restore it before turning in your computer to avoid suspicion.
