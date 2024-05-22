@@ -9,7 +9,7 @@ If you were given a Windows laptops (Dell Latiture 3310s, for CS and other class
 ## Lightspeed agent
 The first step is to disable Lightspeed agent.
 
-You can use the uploaded `.bat` files (`litspedagent.bat` and `test.bat`) to kill off Lightspeed agent and disable Classroom windows (respectively). This will unblock any website as well as `wss://` (websocket) conncections to blocked domains, as well as disabling admin access to your computer. However this only works on Windows computers, NOT ON CHROMEBOOKS. These were originally from [here](https://fcpsoff.github.io/lightspeed.html), though the website might be blocked or taken down entirely.
+You can use the uploaded `.bat` files (`litspedagent.bat` and `test.bat`) to kill off Lightspeed agent and disable Classroom windows, respectively. This will unblock any website as well as `wss://` (websocket) conncections to blocked domains, as well as preventing admin from getting into your computer. However this only works on Windows computers, NOT ON CHROMEBOOKS. These were originally from [here](https://fcpsoff.github.io/lightspeed.html), though the website might be blocked or taken down entirely.
 
 An easy way to make sure that Lightspeed has been disabled is to check [this url](https://localhost:6543/block), it should show a "website down" error if you did evrything right and Lightspeed is actually dead.
 
@@ -34,9 +34,10 @@ https://chrome100.dev/board/dedede
 
 # Browser games and other crap
 If [catfoolyou.github.io](https://catfoolyou.github.io) is blocked, a mirror of my website is available [here](https://eldritchdev2.github.io/Website-v2/)
-### Eaglercraft:
-The latest 1.5.2 and 1.8.8 offline clients are available for download. 
-### Five nights at Winston's
-The offline download is available.
+### Eaglercraft and FNAW:
+The latest 1.5.2 and 1.8.8 offline clients are available for download, as well as Five Nights at Winston's.
+### Java games
+Windows laptops (NOT chromebooks) have Java 17 installed. You can use this to your advantage by installing and running Java source ports of games like Doom and Quake 2. 
+Simply google "[game name] java port" to search up source ports, they exist for most older games.
 ### Other games:
 Doom, Retal, Quake, Slope, Bananabread and all of the other games that must run in a web environment cannot be run locally. Might migrate my site soon.
