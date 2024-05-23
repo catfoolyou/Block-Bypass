@@ -35,7 +35,7 @@ The method described there does not actually work, the only way to kill Lightspe
 
 Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although the site is blocked so obtaining it could be a pain.
 
-The best way to jailbreak a school chromebook (although it is the hardest way) would be to use Sh1mmer or [Cryptosmite](https://github.com/FWSmasher/CryptoSmite). All of the related sites are blocked, so use a proxy or a VPN.
+FCPS chromebooks have `kernver=0x00010003`, so [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) will not work.
 
 FCPS chromebook specs:
 https://cros.tech/device/drawper/
