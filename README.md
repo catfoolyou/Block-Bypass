@@ -26,9 +26,16 @@ To enter the BIOS (after unlocking ofc) you need to restart the laptop while hol
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)
 
+The method described there does not actually work, the only way to kill Lightspeed agent on an FCPS chromebook is as follows:
+1) Open the task manager (esc + the circle button)
+2) Go to the bottom and look for the green lightspeed agent icon
+3) Start spamming Enter to kill the extension (tabs will crash, but you can reopen them later)
+4) Repeat step 3 until the extension icon no longer appears in the list
+5) Go to a website you know that is blocked (such as [catfoolyou.github.io](https://catfoolyou.github.io)), If you did everything right the site should not be blocked.
+
 Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although the site is blocked so obtaining it could be a pain.
 
-The best way to jailbreak a school chromebook (although it is the hardest way) would be to use Sh1mmer. All of the related sites are blocked, so use a proxy or a VPN.
+The best way to jailbreak a school chromebook (although it is the hardest way) would be to use Sh1mmer or [Cryptosmite](https://github.com/FWSmasher/CryptoSmite). All of the related sites are blocked, so use a proxy or a VPN.
 
 FCPS chromebook specs:
 https://cros.tech/device/drawper/
