@@ -35,13 +35,15 @@ The method described there does not actually work, the only way to kill Lightspe
 4) Repeat step 3 until the extension icon no longer appears in the list
 5) Go to a website you know that is blocked (such as [catfoolyou.github.io](https://catfoolyou.github.io)), If you did everything right the site should not be blocked.
 
-## Disable automatic updates (untested)
-To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md). I have not yet tested this method.
+Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although most of them have been patched.
 
-Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although the site is blocked so obtaining it could be a pain.
+## Disable automatic updates (untested)
+To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md), which is available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/chrome%20automatic%20update%20blocker.html). I have not yet tested this method.
+
+## Downgrading (untested)
+The chromebooks are on version 124, and it should theoretically be possible to downgrade to 116 (or even 115 as seen on cros.tech)
 
 ## Unenrollment (untested, WIP)
-
 FCPS chromebooks have `kernver=0x00010003`, so [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) will not work.
 
 FCPS chromebook specs:
