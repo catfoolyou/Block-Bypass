@@ -37,8 +37,8 @@ The method described there does not actually work, the only way to kill Lightspe
 
 Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although most of them have been patched.
 
-## Disable automatic updates (untested)
-To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md), which is available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/chrome%20automatic%20update%20blocker.html). I have not yet tested this method.
+## Disable automatic updates
+To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md), which is available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/chrome%20automatic%20update%20blocker.html). Not sure if this works though.
 
 ## Downgrading (untested)
 The chromebooks are on version 124, and it should theoretically be possible to downgrade to 120 (the lowest possible version in kernver 3)
