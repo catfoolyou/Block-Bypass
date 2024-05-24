@@ -1,10 +1,9 @@
 # FCPS Tech exploits
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
-Credit to [CaenJones](https://github.com/CaenJones) for writeups on FCPS-specific exploits, [Mercury Workshop](https://mercurywork.shop/) and [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) for various Chromebook exploits, as well as [3kh0](https://github.com/3kh0) for ext-remover
 
 ### Disclaimer
 
-Sh1mmer might not be working on FCPS chromebooks (I never tested lmao). You will probably need some way to bypass the Fog or the Tsunami. [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) might be useful.
+Sh1mmer might not be working on FCPS chromebooks (I never tested lmao). You will probably need some way to bypass the Fog or the Tsunami.
 
 These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 
@@ -24,8 +23,11 @@ To enter the BIOS (after unlocking ofc) you need to restart the laptop while hol
 
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
-The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)
+~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
 
+Apparently all of the methods on that page were patched and no longer work, so see below for proper instructions.
+
+## Lightspeed agent
 The method described there does not actually work, the only way to kill Lightspeed agent on an FCPS chromebook is as follows:
 1) Open the task manager (esc + the circle button)
 2) Go to the bottom and look for the green lightspeed agent icon
@@ -33,7 +35,12 @@ The method described there does not actually work, the only way to kill Lightspe
 4) Repeat step 3 until the extension icon no longer appears in the list
 5) Go to a website you know that is blocked (such as [catfoolyou.github.io](https://catfoolyou.github.io)), If you did everything right the site should not be blocked.
 
+## Disable automatic updates (untested)
+To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md). I have not yet tested this method.
+
 Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although the site is blocked so obtaining it could be a pain.
+
+## Unenrollment (untested, WIP)
 
 FCPS chromebooks have `kernver=0x00010003`, so [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) will not work.
 
