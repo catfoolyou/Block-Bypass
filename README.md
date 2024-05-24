@@ -41,7 +41,7 @@ Another way to remove extensions like Lightspeed would be to use [ext-remover](h
 To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md), which is available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/chrome%20automatic%20update%20blocker.html). I have not yet tested this method.
 
 ## Downgrading (untested)
-The chromebooks are on version 124, and it should theoretically be possible to downgrade to 116 (or even 115 as seen on cros.tech)
+The chromebooks are on version 124, and it should theoretically be possible to downgrade to 120 (the lowest possible version in kernver 3)
 
 ## Unenrollment (untested, WIP)
 FCPS chromebooks have `kernver=0x00010003`, so [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) will not work.
