@@ -2,8 +2,7 @@
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
 
 ### Disclaimer
-
-Sh1mmer might not be working on FCPS chromebooks (I never tested lmao). You will probably need some way to bypass the Fog or the Tsunami.
+Sh1mmer will probably not be working on FCPS chromebooks. You will probably need some way to bypass the Fog or the Tsunami, as the chromebooks use ChromeOS 124.
 
 These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 
@@ -21,13 +20,16 @@ It's practically impossible to run anything other than batchfiles on school comp
 
 To enter the BIOS (after unlocking ofc) you need to restart the laptop while holding shift.
 
+## LAN connections
+LAN connections do not work on FCPS wifi, you will need some sort of proxy to conncet between computers.
+
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 ~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
 
 Apparently all of the methods on that page were patched and no longer work, so see below for proper instructions.
 
-## Lightspeed agent
+## Lightspeed agent - THIS MIGHT HAVE BEEN PATCHED!
 The method described there does not actually work, the only way to kill Lightspeed agent on an FCPS chromebook is as follows:
 1) Open the task manager (esc + the circle button)
 2) Go to the bottom and look for the green lightspeed agent icon
@@ -46,8 +48,16 @@ The chromebooks are on version 124, and it should theoretically be possible to d
 ## Unenrollment (untested, WIP)
 FCPS chromebooks have `kernver=0x00010003`, so [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) will not work.
 
+The only viable way to do this is via [shimboot](https://shimboot.ading.dev/). More instructions on this are coming soon, I have not yet tested this method.
+It would probaby be best to use an SD card instead of a USB for this.
+
+## Chromebook specs
 FCPS chromebook specs:
 https://cros.tech/device/drawper/
+
+HP specs sheet: https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c07811220
+
+HP specs on website https://support.hp.com/us-en/document/ish_5492565-5492609-16
 
 FCPS chromebook board and shims (recovery images):
 https://chrome100.dev/board/dedede
