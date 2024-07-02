@@ -1,0 +1,216 @@
+/*===============================================
+RESET
+===============================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	empty-cells: show;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+/*===============================================
+CLEARFIX
+===============================================*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+/*===============================================
+GLOBAL
+===============================================*/
+
+body {
+	font-family: 'Verdana', 'Tahoma', 'Arial', 'Trebuchet MS';
+	font-size: 13px;
+	font-weight: normal;
+	color: #000000;
+	background-color: #F0F0F0;
+	border-top: 3px solid #505050;
+
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Tahoma', 'Arial', 'Trebuchet MS', 'Verdana';
+}
+
+a { color: #0066CC; text-decoration: none; }
+a:hover { color: #000000; text-decoration: underline; }
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+small { font-size: 11px; }
+
+/*===============================================
+HEADER
+===============================================*/
+
+#header {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 800px;
+	height: 100px;
+	background-image: url('../images/head-banner.png');
+	background-position: center;
+	text-align: left;
+	border: 1px solid #505050;
+	border-bottom: 3px solid #101010;
+}
+
+#header  h1 { 
+	margin-top: 25px;
+	margin-left: 10px;
+	font-size: 38px;
+	font-weight: bold;
+	color: #FFFFFF;
+	
+	text-shadow: 0px 0px 5px #000000;
+}
+
+/*===============================================
+CONTAINER
+===============================================*/
+
+#container {
+	margin: 0 auto;
+	width: 800px;
+	background-color: #FFFFFF;
+	border: 1px solid #C0C0C0;
+	
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+/*===============================================
+CONTENT
+===============================================*/
+
+#content-wrap {
+	float: left;
+	width: 615px;
+}
+
+#content {
+	padding: 20px;
+	text-align: left;
+	line-height: 20px;
+}
+
+#content p, #content h2, #content ol, #content ul {
+	margin-bottom: 20px;
+}
+
+#content p:last-child {
+	margin-bottom: 0px;
+}
+
+#content h2 { font-size: 20px; font-weight: bold; }
+
+#content table td, #content table th {
+    padding: 5px;
+    border: 1px solid #E0E0E0;
+    vertical-align: top;
+}
+
+#content table th { font-weight: bold; background-color: #FAFAFA; }
+
+#content ul { 
+    margin-left: 20px;
+    list-style: square;
+    list-style-position: inside;
+    list-style-type: square; 
+}
+
+#content ol { 
+    margin-left: 20px;
+    list-style: decimal;
+    list-style-position: inside;
+    list-style-type: decimal; 
+}
+	
+
+/*===============================================
+SIDEBAR
+===============================================*/
+
+#sidebar{
+	float: right;
+	width: 180px;
+	padding: 10px 0px;
+	background-color: #FAFAFA;
+	border-left: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+/*===============================================
+FOOTER
+===============================================*/
+
+#footer {
+	margin: 0 auto;
+	width: 800px;
+}
+
+#footer  p { padding: 15px 0px; }
+
+.bios-container { margin-bottom: 20px; padding: 10px; background-color: #F0F0F0; border: 1px solid #C0C0C0; }
+.bios-container .bios-textbox { width: 200px; padding: 10px; background-color: #FFFFFF; border: 1px solid #909090; }
+.bios-container .bios-submit { padding: 7px 15px; }
+.bios-container #answer table.answer_table { margin-bottom: 0px; background-color: #FEF9F0; border-collapse: collapse; empty-cells: show; }
+.bios-container #answer table td { padding: 5px; border: 1px solid #FBB829; }
