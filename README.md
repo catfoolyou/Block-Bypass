@@ -6,9 +6,12 @@ Sh1mmer will probably not be working on FCPS chromebooks. You will probably need
 
 These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 
+Shimboot is currently being tested.
+
 ## 2024/2025 update
 Based on the recent changes pushed by FCPS, the only viable way to bypass their restrictions is to BYOD. 
 
+To properly do BYOD, **DO NOT** use the FCPS provided installer, it WILL screw stuff up on your computer. Instead, use the wifi passwords in this repo to connect to their WIFI directly.
 
 ~~# Windows Laptops
 If you were given a Windows laptops (Dell Latiture 3310s, for CS and other classes that need software not installable on chromebooks) you are in luck. Breaking these is pretty simple.~~
