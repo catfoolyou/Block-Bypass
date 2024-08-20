@@ -6,22 +6,29 @@ Sh1mmer will probably not be working on FCPS chromebooks. You will probably need
 
 These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 
-# Windows Laptops
-If you were given a Windows laptops (Dell Latiture 3310s, for CS and other classes that need software not installable on chromebooks) you are in luck. Breaking these is pretty simple.
-## Lightspeed agent
-The first step is to disable Lightspeed agent.
+## 2024/2025 update
+Based on the recent changes pushed by FCPS, the only viable way to bypass their restrictions is to BYOD. 
 
-You can use the uploaded `.bat` files (`litspedagent.bat` and `test.bat`) to kill off Lightspeed agent and disable Classroom windows, respectively. This will unblock any website as well as `wss://` (websocket) conncections to blocked domains, as well as preventing admin from getting into your computer. However this only works on Windows computers, NOT ON CHROMEBOOKS. These were originally from [here](https://fcpsoff.github.io/lightspeed.html), though the website might be blocked or taken down entirely.
 
-An easy way to make sure that Lightspeed has been disabled is to check [this url](https://localhost:6543/block), it should show a "website down" error if you did everything right and Lightspeed is actually dead.
+~~# Windows Laptops
+If you were given a Windows laptops (Dell Latiture 3310s, for CS and other classes that need software not installable on chromebooks) you are in luck. Breaking these is pretty simple.~~
+~~## Lightspeed agent
+The first step is to disable Lightspeed agent.~~
 
-## Applocker (Inability to install and/or run software)
-It's practically impossible to run anything other than batchfiles on school computers without fully reinstalling Windows. Either crack the BIOS password with [this](https://bios-pw.org/) or [this](http://www.biospassword.net/) (might be blocked, disable Lightspeed first), or you can take the back cover off the laptop and short the jumper pins to hard reset the BIOS password if the above sites don't give you working passwords. I would recommend making a backup image of your (unmodified) school Windows install and then restore it before turning in your computer to avoid suspicion.
+~~You can use the uploaded `.bat` files (`litspedagent.bat` and `test.bat`) to kill off Lightspeed agent and disable Classroom windows, respectively. This will unblock any website as well as `wss://` (websocket) conncections to blocked domains, as well as preventing admin from getting into your computer. However this only works on Windows computers, NOT ON CHROMEBOOKS. These were originally from [here](https://fcpsoff.github.io/lightspeed.html), though the website might be blocked or taken down entirely.~~
 
-To enter the BIOS (after unlocking ofc) you need to restart the laptop while holding shift.
+~~An easy way to make sure that Lightspeed has been disabled is to check [this url](https://localhost:6543/block), it should show a "website down" error if you did everything right and Lightspeed is actually dead.~~
 
-## LAN connections
-LAN connections do not work on FCPS wifi, you will need some sort of proxy to conncet between computers.
+~~## Applocker (Inability to install and/or run software)
+It's practically impossible to run anything other than batchfiles on school computers without fully reinstalling Windows. Either crack the BIOS password with [this](https://bios-pw.org/) or [this](http://www.biospassword.net/) (might be blocked, disable Lightspeed first), or you can take the back cover off the laptop and short the jumper pins to hard reset the BIOS password if the above sites don't give you working passwords. I would recommend making a backup image of your (unmodified) school Windows install and then restore it before turning in your computer to avoid suspicion.~~
+
+~~To enter the BIOS (after unlocking ofc) you need to restart the laptop while holding shift.~~
+
+~~## LAN connections
+LAN connections do not work on FCPS wifi, you will need some sort of proxy to conncet between computers.~~
+
+# WARNING
+FCPS no longer gives out dell laptops. The above methods have been patched on their course specific windows PCs.
 
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
@@ -29,18 +36,18 @@ Most people at FCPS have been switched to chromebooks, which are much harder to 
 
 Apparently all of the methods on that page were patched and no longer work, so see below for proper instructions.
 
-## Lightspeed agent - THIS MIGHT HAVE BEEN PATCHED!
-The method described there does not actually work, the only way to kill Lightspeed agent on an FCPS chromebook is as follows:
-1) Open the task manager (esc + the circle button)
-2) Go to the bottom and look for the green lightspeed agent icon
-3) Start spamming Enter to kill the extension (tabs will crash, but you can reopen them later)
-4) Repeat step 3 until the extension icon no longer appears in the list
-5) Go to a website you know that is blocked (such as [catfoolyou.github.io](https://catfoolyou.github.io)), If you did everything right the site should not be blocked.
+## Lightspeed agent - THIS HAS BEEN PATCHED!
+~~The method described there does not actually work, the only way to kill Lightspeed agent on an FCPS chromebook is as follows:~~
+~~1) Open the task manager (esc + the circle button)~~
+~~2) Go to the bottom and look for the green lightspeed agent icon~~
+~~3) Start spamming Enter to kill the extension (tabs will crash, but you can reopen them later)~~
+~~4) Repeat step 3 until the extension icon no longer appears in the list~~
+~~5) Go to a website you know that is blocked (such as [catfoolyou.github.io](https://catfoolyou.github.io)), If you did everything right the site should not be blocked.~~
 
-Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although most of them have been patched.
+~~Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although most of them have been patched.~~
 
-## Disable automatic updates
-To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md), which is available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/chrome%20automatic%20update%20blocker.html). Not sure if this works though.
+## Disable automatic updates (Also patched)
+~~To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md), which is available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/chrome%20automatic%20update%20blocker.html). Not sure if this works though.~~
 
 ## Downgrading (untested)
 The chromebooks are on version 124, and it should theoretically be possible to downgrade to 120 (the lowest possible version in kernver 3)
