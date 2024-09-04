@@ -11,55 +11,43 @@ Shimboot is currently being tested.
 ## 2024/2025 update
 Based on the recent changes pushed by FCPS, the only viable way to bypass their restrictions is to BYOD. 
 
-To properly do BYOD, **DO NOT** use the FCPS provided installer, it WILL screw stuff up on your computer. Instead, use the wifi passwords in this repo to connect to their WIFI directly.
-
-~~# Windows Laptops
-If you were given a Windows laptops (Dell Latiture 3310s, for CS and other classes that need software not installable on chromebooks) you are in luck. Breaking these is pretty simple.~~
-~~## Lightspeed agent
-The first step is to disable Lightspeed agent.~~
-
-~~You can use the uploaded `.bat` files (`litspedagent.bat` and `test.bat`) to kill off Lightspeed agent and disable Classroom windows, respectively. This will unblock any website as well as `wss://` (websocket) conncections to blocked domains, as well as preventing admin from getting into your computer. However this only works on Windows computers, NOT ON CHROMEBOOKS. These were originally from [here](https://fcpsoff.github.io/lightspeed.html), though the website might be blocked or taken down entirely.~~
-
-~~An easy way to make sure that Lightspeed has been disabled is to check [this url](https://localhost:6543/block), it should show a "website down" error if you did everything right and Lightspeed is actually dead.~~
-
-~~## Applocker (Inability to install and/or run software)
-It's practically impossible to run anything other than batchfiles on school computers without fully reinstalling Windows. Either crack the BIOS password with [this](https://bios-pw.org/) or [this](http://www.biospassword.net/) (might be blocked, disable Lightspeed first), or you can take the back cover off the laptop and short the jumper pins to hard reset the BIOS password if the above sites don't give you working passwords. I would recommend making a backup image of your (unmodified) school Windows install and then restore it before turning in your computer to avoid suspicion.~~
-
-~~To enter the BIOS (after unlocking ofc) you need to restart the laptop while holding shift.~~
-
-~~## LAN connections
-LAN connections do not work on FCPS wifi, you will need some sort of proxy to conncet between computers.~~
+To properly do BYOD, you *probably* shouldn't use the FCPS provided installer, it MIGHT screw stuff up on your computer. Instead, use the wifi passwords in this repo to connect to their WIFI directly.
+You can also use guest wifi or download the certs from school Windows PCs (if you have access). I will add the certs to this repo soon.
 
 # WARNING
-FCPS no longer gives out dell laptops. The above methods have been patched on their course specific windows PCs.
+FCPS no longer gives out dell laptops. The previously working methods have been patched on their course specific windows PCs.
 
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 ~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
 
-Apparently all of the methods on that page were patched and no longer work, so see below for proper instructions.
+## Accessing blocked websites
 
-## Lightspeed agent - THIS HAS BEEN PATCHED!
-~~The method described there does not actually work, the only way to kill Lightspeed agent on an FCPS chromebook is as follows:~~
-~~1) Open the task manager (esc + the circle button)~~
-~~2) Go to the bottom and look for the green lightspeed agent icon~~
-~~3) Start spamming Enter to kill the extension (tabs will crash, but you can reopen them later)~~
-~~4) Repeat step 3 until the extension icon no longer appears in the list~~
-~~5) Go to a website you know that is blocked (such as [catfoolyou.github.io](https://catfoolyou.github.io)), If you did everything right the site should not be blocked.~~
+The easiest way to access blocked websites (such as mercuryworkshop or 3kh0 writeups) is to use a proxy. The best way to do so is to deploy said proxy on Github Codespaces or Gitpod. You might need a personal Github account to do this.
 
-~~Another way to remove extensions like Lightspeed would be to use [ext-remover](https://github.com/3kh0/ext-remover), although most of them have been patched.~~
+A proxy with instruction on deployment is available here: https://github.com/catfoolyou/Ultraviolet-App
 
-## Disable automatic updates (Also patched)
-~~To prevent chromeOS from updating and patching certain exploits, you need to disable updates. For this you will need to use [CAUB](https://github.com/red-stone-network/bypass-central/blob/main/chromebooks/caub.md), which is available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/chrome%20automatic%20update%20blocker.html). Not sure if this works though.~~
+After you get access to blocked websites via the proxy, it is advised to use **shimboot** to properly jailbreak your chromebook (see below)
+
+## Incognito exploit (chromeos v123, idk if it works on v128)
+
+https://s-pscripts.github.io/incognito-v123/
+
+A proper technical writeup of the exploit exists here, though it may be blocked. https://github.com/3kh0/ext-remover/discussions/1100
+
+## Skiovox exploit
+
+https://github.com/3kh0/ext-remover/discussions/929
 
 ## Downgrading (untested)
-The chromebooks are on version 124, and it should theoretically be possible to downgrade to 120 (the lowest possible version in kernver 3)
+The chromebooks are on version 128, and it should theoretically be possible to downgrade to 120 (the lowest possible version in kernver 3)
 
-## Unenrollment (untested, WIP)
+## Unenrollment via Shimboot (untested, WIP)
 FCPS chromebooks have `kernver=0x00010003`, so [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) will not work.
 
 The only viable way to do this is via [shimboot](https://shimboot.ading.dev/). More instructions on this are coming soon, I have not yet tested this method.
-It would probaby be best to use an SD card instead of a USB for this.
+
+I will do this soon.
 
 ## Chromebook specs
 FCPS chromebook specs:
@@ -73,11 +61,12 @@ FCPS chromebook board and shims (recovery images):
 https://chrome100.dev/board/dedede
 
 # Browser games and other crap
+Again, use a [proxy](https://github.com/catfoolyou/Ultraviolet-App) to access blocked websites. Be advised that games (and sometimes yt) are somewhat laggy over a proxy connection.
+
 If [catfoolyou.github.io](https://catfoolyou.github.io) is blocked, a mirror of my website is available [here](https://eldritchdev2.github.io/Website-v2/)
+
 ### Eaglercraft and FNAW:
 The latest 1.5.2 and 1.8.8 offline clients are available for download, as well as Five Nights at Winston's.
-### Java games
-Windows laptops (NOT chromebooks) have Java 17 installed. You can use this to your advantage by installing and running Java source ports of games like Doom and Quake 2. 
-Simply google "[game name] java port" to search up source ports, they exist for most older games.
+
 ### Other games:
 Doom, Retal, Quake, Slope, Bananabread and all of the other games that must run in a web environment cannot be run locally. Might migrate my site soon.
