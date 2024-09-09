@@ -15,7 +15,9 @@ To properly do BYOD, you *probably* shouldn't use the FCPS provided installer, i
 You can also use guest wifi or download the certs from school Windows PCs (if you have access). I will add the certs to this repo soon.
 
 # WARNING
-FCPS no longer gives out dell laptops. The previously working methods have been patched on their course specific windows PCs.
+FCPS no longer gives out windows laptops to everyone. The previously working methods have been patched on their course specific windows PCs and most likely on the personal windows laptops as well.
+
+CS students are now given access to personal windows laptops instead of chromebooks, but again they will need to be flashed and have their BIOS passwords reset so as to reinstall the OS. 
 
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
@@ -34,6 +36,8 @@ After you get access to blocked websites via the proxy, it is advised to use **s
 https://s-pscripts.github.io/incognito-v123/
 
 A proper technical writeup of the exploit exists here, though it may be blocked. https://github.com/3kh0/ext-remover/discussions/1100
+
+This might work on 128, I havent tested yet: https://s-pscripts.github.io/incognito-rises/
 
 ## Skiovox exploit
 
