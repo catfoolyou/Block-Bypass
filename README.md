@@ -31,6 +31,15 @@ A proxy with instruction on deployment is available here: https://github.com/cat
 
 After you get access to blocked websites via the proxy, it is advised to use **shimboot** to properly jailbreak your chromebook (see below)
 
+## Chrome DNS (BYOD only)
+
+If you are bringing your own computer, you can do this to prevent sites being blocked (untested)
+
+[Explanation for dumbasses like me](https://simpledns.plus/kb/195-how-to-enable-dns-over-https-doh-in-chrome)
+
+
+![image](https://github.com/user-attachments/assets/9bcbfb46-ba32-4f2e-a4c4-6a0c6bf86684)
+
 ## Incognito exploit (chromeos v123, idk if it works on v128)
 
 https://s-pscripts.github.io/incognito-v123/
