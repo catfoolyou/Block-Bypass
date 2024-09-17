@@ -62,6 +62,8 @@ The only viable way to do this is via [shimboot](https://shimboot.ading.dev/). M
 
 I will do this soon.
 
+Shimboot download: https://github.com/ading2210/shimboot/releases/download/v1.2.1/shimboot_dedede.zip
+
 ## Chromebook specs
 FCPS chromebook specs:
 https://cros.tech/device/drawper/
