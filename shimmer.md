@@ -14,6 +14,7 @@ FCPS Chromebooks come in two models - HP Fortis G10 and G11. You can check this 
 - Relatively small phillips screwdriver
 - Prying tool: Credit card, flathead screwdriver, etc.
 - Another computer
+- A functioning brain
 
 ### Getting ready for the exploit
 Once you have checked the model of your chromebook, you need to download a couple files for the exploit.
