@@ -19,18 +19,6 @@ FCPS no longer gives out windows laptops to everyone. The previously working met
 
 CS students are now given access to personal windows laptops instead of chromebooks, but again they will need to be flashed and have their BIOS passwords reset so as to reinstall the OS. 
 
-# Chromebooks
-Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
-~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
-
-## Accessing blocked websites
-
-The easiest way to access blocked websites (such as mercuryworkshop or 3kh0 writeups) is to use a proxy. The best way to do so is to deploy said proxy on Github Codespaces or Gitpod. You might need a personal Github account to do this.
-
-A proxy with instruction on deployment is available here: https://github.com/catfoolyou/Ultraviolet-App
-
-After you get access to blocked websites via the proxy, it is advised to use **shimboot** to properly jailbreak your chromebook (see below)
-
 ## Chrome DNS (BYOD only)
 
 If you are bringing your own computer, you can do this to prevent sites being blocked (untested)
@@ -39,6 +27,34 @@ If you are bringing your own computer, you can do this to prevent sites being bl
 
 
 ![image](https://github.com/user-attachments/assets/9bcbfb46-ba32-4f2e-a4c4-6a0c6bf86684)
+
+# Chromebooks
+Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
+~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
+
+## CRSH2TTY - Universal unenrollment (any kernver/version)
+It was real the whole time
+CRSH2TTY is a universal unenrollment method created by @TN Partnered and @TN Partnered 2 
+
+How do I do it?
+1) Powerwash (ctrl + alt + shift + r on the login screen)
+2) Proceed through setup as normal
+3) When it starts to enroll wait 1-2 seconds (no longer) and perform an EC reset (refresh + power)
+4) When it starts to enroll again wait 1-2 seconds (no longer) and enter recovery (esc + refresh + power)
+5) Leave if off for at least 15 hours (or longer, I would just leave it overnight)
+6) When you turn it on you should be unenrolled!
+
+discord.gg/unblock
+
+Writeup: https://github.com/kuromuiroha/crsh2tty
+
+## Accessing blocked websites
+
+The easiest way to access blocked websites (such as mercuryworkshop or 3kh0 writeups) is to use a proxy. The best way to do so is to deploy said proxy on Github Codespaces or Gitpod. You might need a personal Github account to do this.
+
+A proxy with instruction on deployment is available here: https://github.com/catfoolyou/Ultraviolet-App
+
+After you get access to blocked websites via the proxy, it is advised to use **shimboot** to properly jailbreak your chromebook (see below)
 
 ## Incognito exploit (chromeos v123, idk if it works on v128)
 
