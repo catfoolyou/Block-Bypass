@@ -21,7 +21,7 @@ CS students are now given access to personal windows laptops instead of chromebo
 
 ## Chrome DNS (BYOD only)
 
-If you are bringing your own computer, you can do this to prevent sites being blocked (untested)
+If you are bringing your own computer, you can do this to prevent sites being blocked
 
 [Explanation for dumbasses like me](https://simpledns.plus/kb/195-how-to-enable-dns-over-https-doh-in-chrome)
 
