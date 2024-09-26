@@ -54,7 +54,7 @@ The easiest way to access blocked websites (such as mercuryworkshop or 3kh0 writ
 
 A proxy with instruction on deployment is available here: https://github.com/catfoolyou/Ultraviolet-App
 
-After you get access to blocked websites via the proxy, it is advised to use **shimboot** to properly jailbreak your chromebook (see below)
+After you get access to blocked websites via the proxy, it is advised to use [**shimboot**](https://github.com/catfoolyou/Block-Bypass/blob/main/shimboot.md) to properly jailbreak your chromebook (see below)
 
 ## Incognito exploit (chromeos v123, idk if it works on v128)
 
@@ -71,12 +71,14 @@ https://github.com/3kh0/ext-remover/discussions/929
 ## Downgrading (untested)
 The chromebooks are on version 128, and it should theoretically be possible to downgrade to 120 (the lowest possible version in kernver 3)
 
-## Unenrollment via Shimboot (untested, WIP)
+## Unenrollment via Shimboot
 FCPS chromebooks have `kernver=0x00010003`, so [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) will not work.
 
 The only viable way to do this is via [shimboot](https://shimboot.ading.dev/). More instructions on this are coming soon, I have not yet tested this method.
 
-I will do this soon.
+Instructions on shimboot are available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/shimboot.md)
+
+Instructions on sh1mmmer are available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/shimmer.md)
 
 Shimboot download: https://github.com/ading2210/shimboot/releases/download/v1.2.1/shimboot_dedede.zip
 
