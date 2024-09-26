@@ -32,6 +32,19 @@ If you are bringing your own computer, you can do this to prevent sites being bl
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 ~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
 
+## Abe's shitfuck
+A random hole in chrome login that allows for unrestriced browsing (one tab only)
+
+1) Add an account to chrome or go to chrome://chrome-signin on a chromebook
+2) Enter `google@d11.org` as the email and complete the captcha/security check
+3) Click sign-in options
+4) When prompted, click Sign in with Github
+5) Click on Docs
+6) Scroll to the bottom and click on Pricing
+7) In the search bar type "google"
+8) In the right sidebar click on `google.com`
+9) You now have a tab that is unaffected by any extensions
+
 ## CRSH2TTY - Universal unenrollment (any kernver/version)
 It was real the whole time
 CRSH2TTY is a universal unenrollment method created by @TN Partnered and @TN Partnered 2 
