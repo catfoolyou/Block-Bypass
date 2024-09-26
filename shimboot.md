@@ -80,7 +80,22 @@ To boot into spoofed unenrolled ChromeOS, press these keys in order:
 1, enter, 1, enter, y, enter, y, enter
 ```
 
+It should take a couple seconds for it to boot. 
+As soon as the ChromeOS logo appears, you can remove the USB.
+Your screen should look something like this:
 
+insertimage
+
+This behaviour is expected. Press "Skip for Now" to continue.
+**DO NOT CONNECT TO ANY WIFI NETWORKS NOW!** 
+If you do, the chromebook may potentially update.
+Click "Browse As Guest" on the left side of the screen, in the text.
+Only after that, you should connect to wifi. 
+If you are in FCPS I recommend using FCPSGuest.
+However, there is a little more you have to do for websites to be unblocked on school wifi.
+
+Open Settings, and search "dns".
+Turn On Secure DNS
 
 
 
