@@ -53,3 +53,34 @@ Your screen should look like this:
 
 insert image
 
+**WARNING: DURING THIS STAGE, THE CHROMEBOOK WILL MAKE A LOUD BEEP! I DO NOT RECOMMEND DOING THIS IN A QUIET CLASS.**
+
+Next, press CTRL + D. When it asks you to confirm, press enter.
+Immediately after that, the screen will go black. As soon as it does, start holding ESC + Refresh + Power again.
+The chromebook should make a loud BEEP when it returns back to the first screen.
+It will show a warning that says "Developer mode is not allowed". Press Enter to ignore the warning.
+You can now plug in the USB or SD Card.
+If you did everything correctly, you should see it blackscreen for a second, then go to a screen with white text.
+Once it finishes loading, your screen should look something like this.
+
+insert image
+
+From here, you have two options:
+1. Boot a spoofed unenrolled ChromeOS
+2. Boot into Debian Linux running off the USB
+
+I highly recommend choosing the first option.
+With either option, you can go back to the enrolled ChromeOS at any time by simply restarting.
+
+If you chose the second option, follow the guide [here](abc). This writeup will not cover it.
+
+To boot into spoofed unenrolled ChromeOS, press these keys in order:
+
+```
+1, enter, 1, enter, y, enter, y, enter
+```
+
+
+
+
+
