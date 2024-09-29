@@ -16,6 +16,10 @@ However, it can sometimes vary.
   - Find the **black** sticker
   - Check the model name which will be in the bottom right
 
+Alternatively, go to `chrome://version/` to look for the board name.
+
+`drawper` is `dedede`, and `yavijo` is `nissa`
+
 If the model name is `HP Fortis 14 G11 Chromebook`, you have the `yavijo` chromebook.
 If the model name is `HP Fortis 14 G10 Chromebook`, you have the `drawper` chromebook.
 Remember the name of the chromebook! You will need it later.
@@ -31,8 +35,8 @@ If you haven't already, install Chromebook Recovery Utility from the chrome web 
 If you don't use chrome or simply don't want to use Chromebook Recovery Utility, you can use any other USB image writer like BalenaEtcher, Rufus, or `dd` if you're on linux.
 
 #### Download the Shimboot Images from here:
-- HP Fortis G10 (`drawper`): Download link soon
-- HP Fortis G11 (`yavijo`): [Download](https://drive.usercontent.google.com/download?id=1ClFG2J1btlalzhYw0ZNeLskIzCdT9YBA&export=download&confirm=t)
+- HP Fortis G10 (`drawper`): [Download (shimboot prebuild)](https://github.com/ading2210/shimboot/releases/download/v1.2.1/shimboot_dedede.zip)
+- HP Fortis G11 (`yavijo`): [Download (idk)](https://drive.usercontent.google.com/download?id=1ClFG2J1btlalzhYw0ZNeLskIzCdT9YBA&export=download&confirm=t) or [Download (shimboot prebuild)](https://github.com/ading2210/shimboot/releases/download/v1.2.1/shimboot_nissa.zip)
 
 They will be about 5GB in size.
 
