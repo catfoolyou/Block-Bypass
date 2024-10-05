@@ -2,11 +2,11 @@
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
 
 ### Disclaimer
-Sh1mmer will probably not be working on FCPS chromebooks. You will probably need some way to bypass the Fog or the Tsunami, as the chromebooks use ChromeOS 128.
-
+~~Sh1mmer will probably not be working on FCPS chromebooks. You will probably need some way to bypass the Fog or the Tsunami, as the chromebooks use ChromeOS 128.~~
+Sh1mmer works on FCPS chromebooks ONLY with the Ti50 version of the Pencil Bypass. View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md)
 These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 
-Shimboot is currently being tested.
+Shimboot ~~is currently being tested~~ works.
 
 ## 2024/2025 update
 Based on the recent changes pushed by FCPS, the only viable way to bypass their restrictions is to BYOD. 
