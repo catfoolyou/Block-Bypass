@@ -3,6 +3,7 @@ A list of functioning offline downloads for all of the stuff on my website after
 
 ### Disclaimer
 ~~Sh1mmer will probably not be working on FCPS chromebooks. You will probably need some way to bypass the Fog or the Tsunami, as the chromebooks use ChromeOS 128.~~
+
 Sh1mmer works on FCPS chromebooks ONLY with the Ti50 version of the Pencil Bypass. View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md)
 These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 
@@ -47,6 +48,7 @@ A random hole in chrome login that allows for unrestriced browsing (one tab only
 
 ## CRSH2TTY - Universal unenrollment (any kernver/version)
 It was real the whole time
+
 CRSH2TTY is a universal unenrollment method created by @TN Partnered and @TN Partnered 2 
 
 How do I do it?
@@ -60,6 +62,13 @@ How do I do it?
 discord.gg/unblock
 
 Writeup: https://github.com/kuromuiroha/crsh2tty
+
+## OLYBmmer/BadRecovery
+BadRecovery unenrolls ALL devices that are EOL before 2024, and can unenroll current supported devices on kernel version 3 or lower.
+
+Instructions are available here: (I am too lazy to make a proper writeup)
+
+https://github.com/BinBashBanana/badrecovery
 
 ## Accessing blocked websites
 
