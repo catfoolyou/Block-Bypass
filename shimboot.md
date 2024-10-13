@@ -99,7 +99,7 @@ Type in `https://dns.adguard-dns.com/dns-query` for the URL.
 If you can now access unblocked websites, congratulations! You have finished.
 
 
-Writeup made with ❤️ by @ka-studios
+Writeup made with ❤️ by @truekas
 
 
 
