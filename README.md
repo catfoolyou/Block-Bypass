@@ -33,6 +33,26 @@ If you are bringing your own computer, you can do this to prevent sites being bl
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 ~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
 
+## Sh1mmer
+
+As of September 16th, sh1mmer with the tsunami bypass has been confirmed working with ChromeOS r128. This exploit allows for unenrollment and the ability to switch into developer mode, plus other things.
+
+FCPS Chromebooks come in two models - HP Fortis G10 and G11. You can check this on the underside of the chromebook, which will usually be under the FCPS barcode (this varies from school to school).
+
+G11 Chromebook: `nissa`
+
+G10 Chromebook: `dedede`
+
+Full writeup is available here: https://github.com/catfoolyou/Block-Bypass/blob/main/shimmer.md
+
+## Shimboot
+
+Shimboot is an exploit based on sh1mmer that boots a linux distribution off a USB or a spoofed unenrolled chromeOS. It works because the rootfs of the shim (a recovery image) is not verified, meaning that it can be replaced with whatever else.
+
+FCPS High School chromebooks (`drawper`) have NOT been tested with shimboot yet.
+
+Full writeup is available here: https://github.com/catfoolyou/Block-Bypass/blob/main/shimboot.md
+
 ## Webview exploit
 A random hole in chrome login that allows for unrestriced browsing (one tab only)
 
@@ -69,22 +89,6 @@ BadRecovery unenrolls ALL devices that are EOL before 2024, and can unenroll cur
 Instructions are available here: (I am too lazy to make a proper writeup)
 
 https://github.com/BinBashBanana/badrecovery
-
-## Accessing blocked websites
-
-The easiest way to access blocked websites (such as mercuryworkshop or 3kh0 writeups) is to use a proxy. The best way to do so is to deploy said proxy on Github Codespaces or Gitpod. You might need a personal Github account to do this.
-
-A proxy with instruction on deployment is available here: https://github.com/catfoolyou/Ultraviolet-App
-
-After you get access to blocked websites via the proxy, it is advised to use [**shimboot**](https://github.com/catfoolyou/Block-Bypass/blob/main/shimboot.md) to properly jailbreak your chromebook (see below)
-
-## Incognito exploit (chromeos v123, idk if it works on v128)
-
-https://s-pscripts.github.io/incognito-v123/
-
-A proper technical writeup of the exploit exists here, though it may be blocked. https://github.com/3kh0/ext-remover/discussions/1100
-
-This might work on 128, I havent tested yet: https://s-pscripts.github.io/incognito-rises/
 
 ## Skiovox exploit
 
