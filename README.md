@@ -15,6 +15,8 @@ Based on the recent changes pushed by FCPS, the only viable way to bypass their 
 To properly do BYOD, you *probably* shouldn't use the FCPS provided installer as your go-to option. Instead, use the wifi passwords in this repo to connect to their wifi directly (if that works).
 You can also use guest wifi or download the certs from school Windows PCs (if you have access). The certs that I managed to get my hands on may or may not work. Afaik it depends on the computer and/or the OS.
 
+Certs are available [here](https://github.com/catfoolyou/Block-Bypass/blob/9296220291856a560ac57edf9a657a80288d8eb7/FairfaxWifi.crt) and [here](https://github.com/catfoolyou/Block-Bypass/blob/9296220291856a560ac57edf9a657a80288d8eb7/certs.zip)
+
 # WARNING
 FCPS no longer gives out windows laptops to everyone. The previously working methods have been patched on their course specific windows PCs and most likely on the personal windows laptops as well.
 
