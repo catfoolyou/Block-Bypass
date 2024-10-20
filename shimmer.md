@@ -45,7 +45,7 @@ Once the case is off, unscrew the back cover as shown in the picture, and insert
 
 **The back cover breaks VERY easily!! Please be careful.**
 
-![image](https://github.com/user-attachments/assets/fa7f0900-d4ed-4397-a5dc-a037fa06aced)
+
 
 Next, find the battery connector on the chromebook and disconnect it. 
 After this, you need to find the BIOS chip on the chromebook, which I have marked in the picture along with the battery connector which will usually be covered with black tape.
@@ -54,12 +54,12 @@ After this, you need to find the BIOS chip on the chromebook, which I have marke
 To do the exploit properly, pins 3 and 8 on the chip need to be bridged. If you're using a chip clip, you can skip to the bottom of this section.
 Place your conductive material on the pins and secure it firmly with the tape. I have outlined the path between the pins in red in this image.
 
-![image](https://github.com/user-attachments/assets/ecb1ca3c-73df-4466-94e1-7cab3deb76cb)
+
 
 If using a chip clip, clip it to the chip so the red wire matches the pin that has the indent next to it, then use a paperclip or safety pin to bridge the pins on the other side of the clip, like in this image.
 The pins that need to be bridged (when holding it notch side up) are pin 3 (2 to the right of the top left pin) and pin 8 (bottom left pin)
 
-![image](https://github.com/user-attachments/assets/1ce490e3-29f3-4fcb-997e-0ef23489d210)
+
 
 Next, hold ESC + Refresh + Power on your chromebook to boot it into recovery mode. It should look like this: 
 
