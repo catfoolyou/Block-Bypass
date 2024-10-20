@@ -50,7 +50,6 @@ Once the case is off, unscrew the back cover as shown in the picture, and insert
 Next, find the battery connector on the chromebook and disconnect it. 
 After this, you need to find the BIOS chip on the chromebook, which I have marked in the picture along with the battery connector which will usually be covered with black tape.
 
-![image](https://github.com/user-attachments/assets/7d9ec270-d334-4906-b1d3-4c905d11e91b)
 
 To do the exploit properly, pins 3 and 8 on the chip need to be bridged. If you're using a chip clip, you can skip to the bottom of this section.
 Place your conductive material on the pins and secure it firmly with the tape. I have outlined the path between the pins in red in this image.
