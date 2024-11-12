@@ -37,9 +37,21 @@ If you are bringing your own computer, you can do this to prevent sites being bl
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 ~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
 
+## Downgrading
+
+To prevent most exploits being patched, you can downgrade both chrome version and kernver to something manageable.
+
+Get images from chrome100.dev
+
+G11 Chromebook: `nissa`
+
+G10 Chromebook: `dedede`
+
+Full instructions are available here: https://chrome100.dev/guide
+
 ## Sh1mmer
 
-As of September 16th, sh1mmer with the tsunami bypass has been confirmed working with ChromeOS r128. This exploit allows for unenrollment and the ability to switch into developer mode, plus other things.
+As of September 16th (2024 I think), sh1mmer with the tsunami bypass has been confirmed working with ChromeOS r128. This exploit allows for unenrollment and the ability to switch into developer mode, plus other things.
 
 FCPS Chromebooks come in two models - HP Fortis G10 and G11. You can check this on the underside of the chromebook, which will usually be under the FCPS barcode (this varies from school to school).
 
@@ -97,9 +109,6 @@ https://github.com/BinBashBanana/badrecovery
 ## Skiovox exploit
 
 https://github.com/3kh0/ext-remover/discussions/929
-
-## Downgrading (untested)
-The chromebooks are on version 128, and it should theoretically be possible to downgrade to 120 (the lowest possible version in kernver 3)
 
 ## Unenrollment via Shimboot
 FCPS chromebooks have `kernver=0x00010003`, so [CryptoSmite](https://github.com/FWSmasher/CryptoSmite) will not work.
