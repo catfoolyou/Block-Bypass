@@ -131,7 +131,7 @@ If you are bringing your own computer, you can do this to prevent sites being bl
 
 ![image](https://github.com/user-attachments/assets/9bcbfb46-ba32-4f2e-a4c4-6a0c6bf86684)
 
-# Browser games and other crap
+# Chromebook games
 Again, use a [proxy](https://github.com/catfoolyou/Ultraviolet-App) to access blocked websites. Be advised that games (and sometimes yt) are somewhat laggy over a proxy connection.
 
 If [catfoolyou.github.io](https://catfoolyou.github.io) is blocked, a mirror of my website is available [here](https://eldritchdev2.github.io/Website-v2/)
@@ -141,3 +141,11 @@ The latest 1.5.2 and 1.8.8 offline clients are available for download, as well a
 
 ### Other games:
 Doom, Retal, Quake, Slope, Bananabread and all of the other games that must run in a web environment cannot be run locally. Might migrate my site soon.
+
+# Windows pc games
+
+### Quake 2
+Download `platform_wx_full.zip`, extract, go to the `bin` folder and run `fullgame.bat +set basedir "Quake 2"`
+
+### Doom
+Download `mochadoom.jar`, get the IWADS and run `java -jar mochadoom.jar -iwad file.wad` replacing `file.wad` with your IWAD file
