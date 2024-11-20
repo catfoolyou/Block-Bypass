@@ -1,24 +1,23 @@
 # FCPS Tech exploits
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
 
-### Disclaimer
-~~Sh1mmer will probably not be working on FCPS chromebooks. You will probably need some way to bypass the Fog or the Tsunami, as the chromebooks use ChromeOS 128.~~
+> [!WARNING]
+> Sh1mmer works on FCPS chromebooks ONLY with the Ti50 version of the Pencil Bypass[^1]. View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md)
+> 
+> These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
+>
+> Shimboot works, PROBABLY with similar issues.
 
-Sh1mmer works on FCPS chromebooks ONLY with the Ti50 version of the Pencil Bypass. View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md)
-These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
-
-Shimboot ~~is currently being tested~~ works.
-
-# WARNING
-FCPS no longer gives out windows laptops to everyone. The previously working methods have been patched on their course specific windows PCs and most likely on the personal windows laptops as well.
-
-CS students are now given access to personal windows laptops instead of chromebooks, but again they will need to be flashed and have their BIOS passwords reset so as to reinstall the OS. 
+If you are looking for windows bypasses, they are available [here](https://github.com/catfoolyou/Block-Bypass/edit/main/README.md#windows-laptops-and-pcs)
 
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
-~~The easiest way to crack FCPS chromebooks would be via [this method](https://github.com/CaenJones/Chromebook-Testing/blob/main/README.md) (Mirror available [here](https://github.com/catfoolyou/Block-Bypass/blob/main/Chromebooks.md) in case the site gets taken down or it's blocked.)~~
 
-## Downgrading kernel versions (kernver)
+G10 chromebooks (drawper) have cr50 chips, which the G11 ones (yavijo) have ti50, making it harder (if not impossible) to unenroll.  
+
+To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
+
+## Downgrading kernel versions (kernver version switcher)
 
 To prevent most exploits being patched, you can downgrade both chrome version and kernver to something manageable.
 
@@ -58,6 +57,15 @@ Theoretically it should work on all FCPS chromebooks, and some people have actua
 `nissa` chromebooks (the G11 ones) will PROBABLY not work. Don't come back here bitching about it.
 
 Full writeup and instructions are here: https://br1ck.vercel.app/
+
+## Fakemurk/murkmod
+To prevent admin from checking unenrollment via GAC (admin console) and finding unenrolled chromebooks, use FakeMurk or Murkmod.
+
+Note that [Fakemurk](https://github.com/MercuryWorkshop/fakemurk) is UNMAINTAINED, so murkmod is recommended.
+
+Murkmod REQUIRES devmode (set GBB flags to `0x8000`, `0x8090`, or `0x8091`), though you probaby should have that enabled if you unenrolled.
+
+Installation instructions are available here: https://github.com/rainestorme/murkmod/blob/main/docs/installation.md
 
 ## CRSH2TTY - Universal unenrollment (PATCHED)
 *I think this might have been patched...*
@@ -128,8 +136,17 @@ If you are bringing your own computer, you can do this to prevent sites being bl
 
 [Explanation for dumbasses like me](https://simpledns.plus/kb/195-how-to-enable-dns-over-https-doh-in-chrome)
 
-
 ![image](https://github.com/user-attachments/assets/9bcbfb46-ba32-4f2e-a4c4-6a0c6bf86684)
+
+# Windows laptops and PCs
+
+FCPS no longer gives out windows laptops to everyone. The previously working methods have been patched on their course specific windows PCs and most likely on the personal windows laptops as well.
+
+CS students are now given access to personal windows laptops instead of chromebooks, but again they will need to be flashed and have their BIOS passwords reset so as to reinstall the OS. 
+
+Windows PCs and laptops have a bundled installation of Java 17, located in `C:/Program Files (x86)/jGRASP/bundled/java/bin/java.exe`. This can be used to run modern Java software, including (but not limited to) Java based source ports of many older games. Look [here](https://github.com/catfoolyou/Block-Bypass/edit/main/README.md#windows-pc-games) instructions on running Java ports of Doom and Quake 2 (included as examples.) 
+
+The following [script](https://github.com/catfoolyou/EaglerGradleScripts/blob/main/EaglerGradle.bat) is linked as an example of setting up gradle to work with a bundled Java installation. The same repo contains modified `build.gradle` and `gradle.properties` for compiling Java applications with a bundled installation.
 
 # Chromebook games
 Again, use a [proxy](https://github.com/catfoolyou/Ultraviolet-App) to access blocked websites. Be advised that games (and sometimes yt) are somewhat laggy over a proxy connection.
@@ -142,10 +159,12 @@ The latest 1.5.2 and 1.8.8 offline clients are available for download, as well a
 ### Other games:
 Doom, Retal, Quake, Slope, Bananabread and all of the other games that must run in a web environment cannot be run locally. Might migrate my site soon.
 
-# Windows pc games
+# Windows PC games
 
 ### Quake 2
-Download `platform_wx_full.zip`, extract, go to the `bin` folder and run `fullgame.bat +set basedir "Quake 2"`
+Download [platform_wx_full.zip](https://www.dropbox.com/scl/fi/f1yspvrcart3delf87uss/platform_wx_full.zip?rlkey=q0yu8x3ab4yn6ktwwrvcmk1ux&st=swq45p8a&dl=0), extract, go to the `bin` folder and run `fullgame.bat +set basedir "Quake 2"`
 
 ### Doom
 Download `mochadoom.jar`, get the IWADS and run `java -jar mochadoom.jar -iwad file.wad` replacing `file.wad` with your IWAD file
+
+[^1]: On chromebooks with Ti50 boards or all of them??
