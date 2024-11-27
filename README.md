@@ -2,7 +2,7 @@
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
 
 > [!WARNING]
-> Sh1mmer works on FCPS chromebooks ONLY with the Ti50 version of the Pencil Bypass[^1]. View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md)
+> Sh1mmer works on FCPS chromebooks with the Ti50 version of the Pencil Bypass[^1] if you have a Ti50 board. View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md)
 > 
 > These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 >
@@ -67,32 +67,12 @@ Murkmod REQUIRES devmode (set GBB flags to `0x8000`, `0x8090`, or `0x8091`), tho
 
 Installation instructions are available here: https://github.com/rainestorme/murkmod/blob/main/docs/installation.md
 
-## CRSH2TTY - Universal unenrollment (PATCHED)
-*I think this might have been patched...*
-
-CRSH2TTY is a universal unenrollment method created by @TN Partnered and @TN Partnered 2 
-
-How do I do it?
-1) Powerwash (ctrl + alt + shift + r on the login screen)
-2) Proceed through setup as normal
-3) When it starts to enroll wait 1-2 seconds (no longer) and perform an EC reset (refresh + power)
-4) When it starts to enroll again wait 1-2 seconds (no longer) and enter recovery (esc + refresh + power)
-5) Leave if off for at least 15 hours (or longer, I would just leave it overnight)
-6) When you turn it on you should be unenrolled!
-
-Writeup: https://github.com/kuromuiroha/crsh2tty
-
-## OLYBmmer/BadRecovery
+## OLYBmmer/BadRecovery (patched maybe)
 BadRecovery unenrolls ALL devices that are EOL before 2024, and can unenroll current supported devices on kernel version 3 or lower.
 
 Instructions are available here: (I am too lazy to make a proper writeup)
 
 https://github.com/BinBashBanana/badrecovery
-
-## Skiovox exploit
-This was patched I think
-
-https://github.com/3kh0/ext-remover/discussions/929
 
 ## Webview exploit
 A random hole in chrome login that allows for unrestriced browsing (one tab only)
