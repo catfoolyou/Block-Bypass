@@ -2,11 +2,9 @@
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
 
 > [!WARNING]
-> Sh1mmer works on FCPS chromebooks with the Ti50 version of the Pencil Bypass[^1] if you have a Ti50 board. View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md)
+> Sh1mmer works on FCPS chromebooks. View the writeup [here](https://github.com/CaenJones/crazy-repo/blob/main/shimmer.md)
 > 
-> These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
->
-> Shimboot works, PROBABLY with similar issues.
+> Shimboot also works.
 
 If you are looking for windows bypasses, they are available [here](https://github.com/catfoolyou/Block-Bypass/edit/main/README.md#windows-laptops-and-pcs)
 
@@ -49,15 +47,6 @@ FCPS High School chromebooks (`drawper`) have NOT been tested with shimboot yet.
 
 Full writeup is available here: https://github.com/catfoolyou/Block-Bypass/blob/main/shimboot.md
 
-## Br1ck
-It is capable of unenrolling all devices with a Cr50 chip on the latest version, v130. It has a low chance of being patched without a release of a new Chromebook model.
-
-Theoretically it should work on all FCPS chromebooks, and some people have actually used it successfully.
-
-`nissa` chromebooks (the G11 ones) will PROBABLY not work. Don't come back here bitching about it.
-
-Full writeup and instructions are here: https://br1ck.vercel.app/
-
 ## Fakemurk/murkmod
 To prevent admin from checking unenrollment via GAC (admin console) and finding unenrolled chromebooks, use FakeMurk or Murkmod.
 
@@ -66,13 +55,6 @@ Note that [Fakemurk](https://github.com/MercuryWorkshop/fakemurk) is UNMAINTAINE
 Murkmod REQUIRES devmode (set GBB flags to `0x8000`, `0x8090`, or `0x8091`), though you probaby should have that enabled if you unenrolled.
 
 Installation instructions are available here: https://github.com/rainestorme/murkmod/blob/main/docs/installation.md
-
-## OLYBmmer/BadRecovery (patched maybe)
-BadRecovery unenrolls ALL devices that are EOL before 2024, and can unenroll current supported devices on kernel version 3 or lower.
-
-Instructions are available here: (I am too lazy to make a proper writeup)
-
-https://github.com/BinBashBanana/badrecovery
 
 ## Webview exploit
 A random hole in chrome login that allows for unrestriced browsing (one tab only)
