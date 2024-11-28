@@ -2,13 +2,11 @@
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
 
 > [!WARNING]
-> Sh1mmer works on FCPS chromebooks with the Ti50 version of the Pencil Bypass[^1] if you have a Ti50 board. View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md)
+> Sh1mmer works on FCPS chromebooks with the Ti50 version of the Pencil Bypass[^1] if you have a Ti50 board. View the writeup [here]([https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md](https://github.com/catfoolyou/Block-Bypass/blob/main/shimmer.md))
 > 
 > These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 >
 > Shimboot works, PROBABLY with similar issues.
-
-If you are looking for windows bypasses, they are available [here](https://github.com/catfoolyou/Block-Bypass/edit/main/README.md#windows-laptops-and-pcs)
 
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
