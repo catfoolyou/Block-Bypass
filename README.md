@@ -6,8 +6,6 @@ A list of functioning offline downloads for all of the stuff on my website after
 > 
 > Shimboot also works.
 
-If you are looking for windows bypasses, they are available [here](https://github.com/catfoolyou/Block-Bypass/edit/main/README.md#windows-laptops-and-pcs)
-
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 
