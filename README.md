@@ -64,6 +64,9 @@ Theoretically it should work on all FCPS chromebooks, and some people have actua
 
 Full writeup and instructions are here: https://br1ck.vercel.app/
 
+## Idfk what this is, Jones was bitching about it so it could be good
+It may be possible on unenrolled Chromebooks with developer mode enabled to run `vpd—i RW_VPD -s check_enrollment=1` in VT2 to bypass policy and re-enroll. An exploit kit named Rigtoolsv2 also claims to have functionality called `Riienrollment`, which can also bypass enrollment policy set in the admin console.
+
 ## Fakemurk/murkmod
 To prevent admin from checking unenrollment via GAC (admin console) and finding unenrolled chromebooks, use FakeMurk or Murkmod.
 
