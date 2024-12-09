@@ -29,6 +29,14 @@ G10 Chromebook: `dedede`
 
 Full instructions are available here: https://chrome100.dev/guide
 
+## GBB flags
+
+Use Rigtools to set GBB flags and fix shit on your chromebook
+
+https://binbashbanana.github.io/gbbflaginator/
+
+https://docs.titaniumnetwork.org/kajigs/rigtools/
+
 ## Sh1mmer
 As of September 16th (2024 I think), sh1mmer with the tsunami bypass has been confirmed working with ChromeOS r128. This exploit allows for unenrollment and the ability to switch into developer mode, plus other things.
 
