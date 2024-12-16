@@ -8,6 +8,12 @@ A list of functioning offline downloads for all of the stuff on my website after
 >
 > Shimboot works, PROBABLY with similar issues.
 
+## Legal disclaimer and anti-censorship statement
+
+This repo has been created to help students bypass and combat district censorship and restrictions. I **DO NOT** endorse or encourage the useage of the following exploits for cheating, theft, and/or harmful activity (including, but not limited to exploiting cybersecurity). 
+
+To learn more, please visit https://redflagmachine.com/research/ for an example of the censorship and rights violations that are incurred via internet censorship.
+
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 
