@@ -21,6 +21,8 @@ G10 chromebooks (drawper) have cr50 chips, which the G11 ones (yavijo) have ti50
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
+This [document](https://github.com/catfoolyou/Block-Bypass/blob/main/Pencil%20Sharpener.docx) might also be useful for unenrollment
+
 ## Downgrading kernel versions (kernver version switcher)
 
 To prevent most exploits being patched, you can downgrade both chrome version and kernver to something manageable.
