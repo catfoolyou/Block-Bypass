@@ -12,6 +12,9 @@ A list of functioning offline downloads for all of the stuff on my website after
 
 This repo has been created to help students bypass and combat district censorship and restrictions. I **DO NOT** endorse or encourage the useage of the following exploits for cheating, theft, and/or harmful activity (including, but not limited to exploiting cybersecurity). 
 
+To FCPS DIT:
+CIPA does **NOT** give you the legal right to compromise student privacy on the internet and/or unlimited access to information on the internet, which **IS** a right for all students. The purpose of this "exploit doc" is to help people protest excessive censorship and unethical DIT practices. Action taken against people who use these exploits can be ground for legal counteraction.
+
 To learn more, please visit https://redflagmachine.com/research/ for an example of the censorship and rights violations that are incurred via internet censorship.
 
 # Chromebooks
@@ -103,6 +106,12 @@ A random hole in chrome login that allows for unrestriced browsing (one tab only
 7) In the search bar type "google"
 8) In the right sidebar click on `google.com`
 9) You now have a tab that is unaffected by any extensions
+
+## Misc exploits
+A series of exploits for different ChromeOS versions, some might be outdated or patched.
+Some might work, I didnt test any of this
+
+https://github.com/S-PScripts/chromebook-utilities/tree/main/Exploits
 
 ## Chromebook specs
 FCPS chromebook specs:
