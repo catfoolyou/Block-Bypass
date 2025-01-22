@@ -24,7 +24,9 @@ Most people at FCPS have been switched to chromebooks, which are much harder to 
 
 G10 chromebooks (drawper) have cr50 chips, which the G11 ones (yavijo) have might, but probably dont have ti50, making it harder to unenroll.  
 
-According to a high-level leak from inside DIT, *NO* FCPS chromebooks have ti50. Highschool Drawper chromebooks have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20G10,CR50%20(SuzyQ)%2C%20jumper), while the middle school Yavijo ones are ti50 *capable*, but we have older models that have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20inch,CR50/Ti50%20(SuzyQ)).
+According to a high-level leak from inside DIT, *MOST*, if not all FCPS chromebooks have ti50. Highschool Drawper chromebooks have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20G10,CR50%20(SuzyQ)%2C%20jumper), while the middle school Yavijo ones are ti50 *capable*, but we have older models that have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20inch,CR50/Ti50%20(SuzyQ)).
+
+If something doesnt work for some reason, it *MIGHT* be because you are unfortunate enough to have a ti50, in which case you are out of luck, unless you can BYOD.
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
