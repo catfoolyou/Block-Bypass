@@ -2,7 +2,9 @@
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
 
 > [!WARNING]
-> Sh1mmer works on FCPS chromebooks with the Ti50 version of the Pencil Bypass[^1] if you have a Ti50 board. View the writeup [here]([https://github.com/catfoolyou/Block-Bypass/blob/main/pencilbypass-ti50.md](https://github.com/catfoolyou/Block-Bypass/blob/main/shimmer.md))
+> Sh1mmer and most recent unenrollement exploits work on FCPS chromebooks. If you somehow have a Ti50 board (which you probably dont, so things SHOULD work normally) use the Ti50 version of the Pencil Bypass[^1] . View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/shimmer.md).
+>
+> Recent leaks from inside DIT have proven than most, if not ALL chromebooks in FCPS have cr50 boards.
 > 
 > These hacks might not work on computers outside of FCPS because every district and/or county uses different software and hardware.
 >
@@ -20,33 +22,13 @@ To learn more, please visit https://redflagmachine.com/research/ for an example 
 # Chromebooks
 Most people at FCPS have been switched to chromebooks, which are much harder to jailbreak than to old Windows laptops. 
 
-G10 chromebooks (drawper) have cr50 chips, which the G11 ones (yavijo) have ti50, making it harder (if not impossible) to unenroll.  
+G10 chromebooks (drawper) have cr50 chips, which the G11 ones (yavijo) have might, but probably dont have ti50, making it harder to unenroll.  
+
+According to a high-level leak from inside DIT, *NO* FCPS chromebooks have ti50. Highschool Drawper chromebooks have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20G10,CR50%20(SuzyQ)%2C%20jumper), while the middle school Yavijo ones are ti50 *capable*, but we have older models that have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20inch,CR50/Ti50%20(SuzyQ)).
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
 This [document](https://github.com/catfoolyou/Block-Bypass/blob/main/Pencil%20Sharpener.docx) might also be useful for unenrollment
-
-## Downgrading kernel versions (kernver version switcher)
-
-To prevent most exploits being patched, you can downgrade both chrome version and kernver to something manageable.
-
-Use KVS, with a full writeup and instructions available here: https://github.com/kxtzownsu/KVS
-
-Get images from chrome100.dev
-
-G11 Chromebook: `nissa`
-
-G10 Chromebook: `dedede`
-
-Full instructions are available here: https://chrome100.dev/guide
-
-## GBB flags
-
-Use Rigtools to set GBB flags and fix shit on your chromebook
-
-https://binbashbanana.github.io/gbbflaginator/
-
-https://docs.titaniumnetwork.org/kajigs/rigtools/
 
 ## Sh1mmer
 As of September 16th (2024 I think), sh1mmer with the tsunami bypass has been confirmed working with ChromeOS r128. This exploit allows for unenrollment and the ability to switch into developer mode, plus other things.
@@ -75,10 +57,65 @@ Theoretically it should work on all FCPS chromebooks, and some people have actua
 
 Full writeup and instructions are here: https://br1ck.vercel.app/
 
+## SuzyQ cable exploit (requires unenrollment)
+Full explanation here: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html and here https://docs.mrchromebox.tech/images/wp/Drawman_wp.jpg
+
+This will allow you to disable Hardware WP without opening your device, and this may not work on all devices. You also need to be unenrolled first or have FWMP off with Developer Mode on.
+
+Please note to do this Kajig you need to own a SuzyQ cable or adapter, I won't be guiding you on where to buy one but if you would like to make one here are some schematics:  https://cdn.sparkfun.com/assets/9/e/f/8/2/951-00273-01_20180607_suzyqable_SCH_1.pdf
+
+Now that you got your SuzyQ, here's what you do next.
+
+Open a root shell on your Chromebook, this can be on a shim or within crosh, doesn't matter
+
+Run `gsctool -a -o`, whenever it tells you to Press PP, press the power button
+
+At the end of that process it'll restart and you'll be out of Developer Mode, turn it back on and head back to the terminal
+
+Plug in your SuzyQ, on most devices you'd use the Right USB C port and then plug the USB A in anywhere, try your other ports if that doesn't work for you.
+
+Once it's plugged in, in the `lsusb` command you should see the CR50 with an `18d1:5014` USB ID, if you don't see this try replugging.
+
+Now that you see that, make sure that the TTY is open via running `ls /dev/ttyUSB*`, you should see TTY 0, 1, and 2.
+
+To disable WP, run each of these one by one
+`echo "wp false" > /dev/ttyUSB0`
+
+`echo "wp false atboot" > /dev/ttyUSB0`
+
+`echo "ccd reset factory" > /dev/ttyUSB0`
+
+Reboot, then run
+`flashrom --wp-disable`
+
+Run `crossystem wpsw_cur`, this should output 0.
+
+## Downgrading kernel versions (kernver version switcher), requires unenrollment
+
+To prevent most exploits being patched, you can downgrade both chrome version and kernver to something manageable.
+
+Use KVS, with a full writeup and instructions available here: https://github.com/kxtzownsu/KVS
+
+Get images from chrome100.dev
+
+G11 Chromebook: `nissa`
+
+G10 Chromebook: `dedede`
+
+Full instructions are available here: https://chrome100.dev/guide
+
+## GBB flags (requires unenrollment)
+
+Use Rigtools to set GBB flags and fix shit on your chromebook
+
+https://binbashbanana.github.io/gbbflaginator/
+
+https://docs.titaniumnetwork.org/kajigs/rigtools/
+
 ## Idfk what this is, Jones was bitching about it so it could be good
 It may be possible on unenrolled Chromebooks with developer mode enabled to run `vpd—i RW_VPD -s check_enrollment=1` in VT2 to bypass policy and re-enroll. An exploit kit named Rigtoolsv2 also claims to have functionality called `Riienrollment`, which can also bypass enrollment policy set in the admin console.
 
-## Fakemurk/murkmod
+## Fakemurk/murkmod (requires unenrollment)
 To prevent admin from checking unenrollment via GAC (admin console) and finding unenrolled chromebooks, use FakeMurk or Murkmod.
 
 Note that [Fakemurk](https://github.com/MercuryWorkshop/fakemurk) is UNMAINTAINED, so murkmod is recommended.
@@ -180,4 +217,4 @@ Blood: https://www.mediafire.com/file/o19ch8bxtxj6i59/Blood_DOS_Files_EN.zip/fil
 
 Duke Nukem 3d: https://archive.org/download/DUKE3D_DOS/DUKE3D.zip
 
-[^1]: On chromebooks with Ti50 boards or all of them??
+[^1]: Tf is this about?? None of them have ti50 afaik, at least none of the highschool ones
