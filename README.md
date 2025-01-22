@@ -173,4 +173,11 @@ Download [platform_wx_full.zip](https://www.dropbox.com/scl/fi/f1yspvrcart3delf8
 ### Doom
 Download `mochadoom.jar`, get the IWADS and run `java -jar mochadoom.jar -iwad file.wad` replacing `file.wad` with your IWAD file
 
+### Build engine games (Blood, Duke Nukem, etc)
+Download [BuildGDX](https://m210.duke4.net/index.php/downloads/send/8-java/54-buildgdx), then get your hands on the game files (usually from the internet archive), and play it. 
+
+Blood: https://www.mediafire.com/file/o19ch8bxtxj6i59/Blood_DOS_Files_EN.zip/file
+
+Duke Nukem 3d: https://archive.org/download/DUKE3D_DOS/DUKE3D.zip
+
 [^1]: On chromebooks with Ti50 boards or all of them??
