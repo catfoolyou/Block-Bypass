@@ -55,9 +55,18 @@ It is capable of unenrolling all devices with a Cr50 chip on the latest version,
 
 Theoretically it should work on all FCPS chromebooks, and some people have actually used it successfully.
 
-`nissa` chromebooks (the G11 ones) will PROBABLY not work. Don't come back here bitching about it.
+`nissa` chromebooks (the G11 ones) *might* not work. Don't come back here bitching about it.
 
 Full writeup and instructions are here: https://br1ck.vercel.app/
+
+## Icarus
+An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
+
+Has not yet been tested, but it should work on FCPS chromebooks, since they have cr50 chips.
+
+You will need a shim for you chromebook for this exploit.
+
+Full explanation and writeup available here: https://github.com/MunyDev/icarus
 
 ## SuzyQ cable exploit (requires unenrollment)
 Full explanation here: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html and here https://docs.mrchromebox.tech/images/wp/Drawman_wp.jpg
