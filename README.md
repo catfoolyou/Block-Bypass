@@ -66,6 +66,10 @@ Has not yet been tested, but it should work on FCPS chromebooks, since they have
 
 You will need a shim for you chromebook for this exploit.
 
+G11 Chromebook: (`nissa`) https://dl.darkn.bio/api/raw/?path=/SH1mmer/nissa.zip
+
+G10 Chromebook: (`dedede`) https://dl.darkn.bio/api/raw/?path=/SH1mmer/dedede.zip
+
 Full explanation and writeup available here: https://github.com/MunyDev/icarus
 
 ## SuzyQ cable exploit (requires unenrollment)
@@ -154,6 +158,13 @@ A random hole in chrome login that allows for unrestriced browsing (one tab only
 7) In the search bar type "google"
 8) In the right sidebar click on `google.com`
 9) You now have a tab that is unaffected by any extensions
+
+## RMA shims
+Misc. info and documentation on RMA shims
+
+https://chromium.googlesource.com/chromiumos/platform/factory/+/HEAD/setup/RMA_SHIM.md
+
+https://chromium.googlesource.com/chromiumos/platform/factory_installer/+/HEAD/README.md
 
 ## Misc exploits
 A series of exploits for different ChromeOS versions, some might be outdated or patched.
