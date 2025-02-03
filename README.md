@@ -218,7 +218,7 @@ The following [script](https://github.com/catfoolyou/EaglerGradleScripts/blob/ma
 # Chromebook games
 Again, use a [proxy](https://github.com/catfoolyou/Ultraviolet-App) to access blocked websites. Be advised that games (and sometimes yt) are somewhat laggy over a proxy connection.
 
-If [catfoolyou.github.io](https://catfoolyou.github.io) is blocked, a mirror of my website is available [here](https://eldritchdev2.github.io/Website-v2/)
+If [catfoolyou.github.io](https://catfoolyou.github.io) is blocked, a mirror of my website is available [here](https://eldritchdev3.github.io/Website-v2/)
 
 ### Eaglercraft and FNAW:
 The latest 1.5.2 and 1.8.8 offline clients are available for download, as well as Five Nights at Winston's.
