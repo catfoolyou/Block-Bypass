@@ -24,16 +24,26 @@ Most people at FCPS have been switched to chromebooks, which are much harder to 
 
 G10 chromebooks (drawper) have cr50 chips, which the G11 ones (yavijo) have might, but probably dont have ti50, making it harder to unenroll if you have a ti50.  
 
-According to a high-level leak from inside DIT, *MOST*, if not all FCPS chromebooks have ti50. Highschool Drawper chromebooks have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20G10,CR50%20(SuzyQ)%2C%20jumper), while the middle school Yavijo ones are ti50 *capable*, but we have older models that have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20inch,CR50/Ti50%20(SuzyQ)).
+According to a high-level leak from inside DIT, *MOST*, if not all FCPS chromebooks have Ti50. Highschool Drawper chromebooks have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20G10,CR50%20(SuzyQ)%2C%20jumper), while the middle school Yavijo ones are Ti50 *capable*, but we have older models that have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20inch,CR50/Ti50%20(SuzyQ)).
 
-If something doesnt work for some reason, it *MIGHT* be because you are unfortunate enough to have a ti50, in which case you are out of luck, unless you can BYOD.
+**The problem is that some middle schools have gotten Ti50 `yavijo` chromebooks in later deployments, so that will depend on your school**
+
+See the Pencil Sharpener section below for a full explanation of this exploit
+
+If something doesnt work for some reason, it *MIGHT* be because you are unfortunate enough to have a Ti50, in which case you are out of luck, unless you can BYOD.
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
-This [document](https://github.com/catfoolyou/Block-Bypass/blob/main/Pencil%20Sharpener.docx) might also be useful for unenrollment
+**If you have a Ti50 board**
 
-### If you have a Ti50 board
 Read this, it *might* help: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html
+
+## Pencil sharpener (ti50 only)
+Full writeup: https://github.com/truekas/PencilSharpener/tree/main
+
+This is basically sh1mmer but for `yavijo` chromebooks WITH Ti50 chips, which are present ONLY in certain middle schools.
+
+If you have the `dedede` chromebooks, this does not apply to you and you can unenroll via "conventional methods", i.e. sh1mmer, shimboot, icarus, etc.
 
 ## Sh1mmer
 As of September 16th (2024 I think), sh1mmer with the tsunami bypass has been confirmed working with ChromeOS r128. This exploit allows for unenrollment and the ability to switch into developer mode, plus other things.
