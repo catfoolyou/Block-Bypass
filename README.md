@@ -32,6 +32,9 @@ To prevent admin from finding out about your unenrollment, use **fakemurk** or *
 
 This [document](https://github.com/catfoolyou/Block-Bypass/blob/main/Pencil%20Sharpener.docx) might also be useful for unenrollment
 
+### If you have a Ti50 board
+Read this, it *might* help: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html
+
 ## Sh1mmer
 As of September 16th (2024 I think), sh1mmer with the tsunami bypass has been confirmed working with ChromeOS r128. This exploit allows for unenrollment and the ability to switch into developer mode, plus other things.
 
