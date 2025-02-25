@@ -1,6 +1,10 @@
 # FCPS Tech exploits
 A list of functioning offline downloads for all of the stuff on my website after it got blocked, as well as instructions for bypassing consorship and jailbreaking school computers in FCPS.
 
+> [!IMPORTANT]
+> This document is aimed mainly at FCPS systems and students *inside* FCPS. If you are **OUTSIDE** of FCPS, you will need to check your chromebook model [here](https://docs.mrchromebox.tech/docs/supported-devices.html#device-listing).
+> If your device is listed under `Intel Alderlake-N` OR `AMD Mendocino`, this means that you have a Ti50 board, and you are [SOL](https://en.wikipedia.org/wiki/List_of_U.S._government_and_military_acronyms#:~:text=SOL%20%E2%80%93%20Shit%20Out%20of%20Luck%20(U.S.%20Army)) and unenrolling is only possible via the Pencil Method (see below). Otherwise, you have an older system and you can unenroll via sh1mmer, shimboot or other "conventional methods"
+
 > [!WARNING]
 > Sh1mmer and most recent unenrollement exploits work on FCPS chromebooks. If you somehow have a Ti50 board (which you probably dont, so things SHOULD work normally) use the Ti50 version of the Pencil Bypass[^1] . View the writeup [here](https://github.com/catfoolyou/Block-Bypass/blob/main/shimmer.md).
 >
