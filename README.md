@@ -87,7 +87,9 @@ G11 Chromebook: (`nissa`) https://dl.darkn.bio/api/raw/?path=/SH1mmer/nissa.zip
 
 G10 Chromebook: (`dedede`) https://dl.darkn.bio/api/raw/?path=/SH1mmer/dedede.zip
 
-Full explanation and writeup available here: https://github.com/MunyDev/icarus
+Full explanation and writeup available here: https://github.com/fanqyxl/icarus?tab=readme-ov-file
+
+Important files: https://git.kxtz.dev/kxtzownsu/Icarus-Lite.git
 
 Downloads for prebuilds: https://dl.darkn.bio/icarus
 
