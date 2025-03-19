@@ -81,17 +81,15 @@ An exploit that allows you to unenroll by managing the chromebook from an arbitr
 
 Has not yet been tested, but it should work on FCPS chromebooks, since they have cr50 chips.
 
-You will need a shim for you chromebook for this exploit (I think).
+You will need a shim prebuild for you chromebook for this exploit (from [here?](https://dl.fanqyxl.net/ChromeOS/Prebuilts/Icarus))
 
-G11 Chromebook: (`nissa`) https://dl.darkn.bio/api/raw/?path=/SH1mmer/nissa.zip
-
-G10 Chromebook: (`dedede`) https://dl.darkn.bio/api/raw/?path=/SH1mmer/dedede.zip
+1) Burn the shim onto a usb, then boot from it
+2) Run the server on a linux pc/laptop
+3) Connect to the wifi from your server, and the chromebook should unenroll
 
 Full explanation and writeup available here: https://github.com/fanqyxl/icarus?tab=readme-ov-file
 
 Important files: https://git.kxtz.dev/kxtzownsu/Icarus-Lite.git
-
-Downloads for prebuilds: https://dl.darkn.bio/icarus
 
 ## SuzyQ cable exploit (requires unenrollment)
 Full explanation here: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html and here https://docs.mrchromebox.tech/images/wp/Drawman_wp.jpg
