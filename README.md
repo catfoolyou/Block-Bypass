@@ -42,6 +42,38 @@ To prevent admin from finding out about your unenrollment, use **fakemurk** or *
 
 Read this, it *might* help: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html
 
+## BadApple
+Basically an exploit that does the same thing that sh1mmer does but for keyrolled boards like `nissa` (the `yavijo` chromebooks!)
+
+WILL NOT WORK IF YOU HAVE Kv5!
+
+How it works:
+
+1) enter developer mode with ESC+REFRESH+POWER and CTRL+D
+2) when you reach the block screen, press ESC+REFRESH+POWER again
+3) select Internet Recovery
+4) when miniOS loads in, press CTRL+ALT+F3(open the VT3)
+5) you now have a shell you can run commands in
+
+Then follow the instructions here: https://github.com/applefritter-inc/BadApple-icarus?tab=readme-ov-file#2-usbless-method
+
+Full writeup: https://github.com/applefritter-inc/BadApple
+
+## Icarus
+An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
+
+Has not yet been tested, but it should work on FCPS chromebooks, since they have cr50 chips.
+
+You will need a shim prebuild for you chromebook for this exploit (from [here?](https://dl.fanqyxl.net/ChromeOS/Prebuilts/Icarus))
+
+1) Burn the shim onto a usb, then boot from it
+2) Run the server on a linux pc/laptop
+3) Connect to the wifi from your server, and the chromebook should unenroll
+
+Full explanation and writeup available here: https://github.com/fanqyxl/icarus?tab=readme-ov-file
+
+Important files: https://git.kxtz.dev/kxtzownsu/Icarus-Lite.git
+
 ## Pencil sharpener (ti50 only)
 Full writeup: https://github.com/truekas/PencilSharpener/tree/main
 
@@ -75,21 +107,6 @@ Theoretically it should work on all FCPS chromebooks, and some people have actua
 `nissa` chromebooks (the G11 ones) *might* not work. Don't come back here bitching about it.
 
 Full writeup and instructions are here: https://br1ck.vercel.app/
-
-## Icarus
-An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
-
-Has not yet been tested, but it should work on FCPS chromebooks, since they have cr50 chips.
-
-You will need a shim prebuild for you chromebook for this exploit (from [here?](https://dl.fanqyxl.net/ChromeOS/Prebuilts/Icarus))
-
-1) Burn the shim onto a usb, then boot from it
-2) Run the server on a linux pc/laptop
-3) Connect to the wifi from your server, and the chromebook should unenroll
-
-Full explanation and writeup available here: https://github.com/fanqyxl/icarus?tab=readme-ov-file
-
-Important files: https://git.kxtz.dev/kxtzownsu/Icarus-Lite.git
 
 ## SuzyQ cable exploit (requires unenrollment)
 Full explanation here: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html and here https://docs.mrchromebox.tech/images/wp/Drawman_wp.jpg
