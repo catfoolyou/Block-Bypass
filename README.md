@@ -38,26 +38,18 @@ If something doesnt work for some reason, it *MIGHT* be because you are unfortun
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
-**If you have a Ti50 board**
+## Lightspeed killer - NOT unenrollment!
+https://github.com/Blobby-Boi/LightSPED-Killer-Agent if `data:text` isnt blocked
 
-Read this, it *might* help: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html
+or use LTMEAT print:
 
-## BadApple
-Basically an exploit that does the same thing that sh1mmer does but for keyrolled boards like `nissa` (the `yavijo` chromebooks!)
-
-WILL NOT WORK IF YOU HAVE Kv5!
-
-How it works:
-
-1) enter developer mode with ESC+REFRESH+POWER and CTRL+D
-2) when you reach the block screen, press ESC+REFRESH+POWER again
-3) select Internet Recovery
-4) when miniOS loads in, press CTRL+ALT+REFRESH(open the VT3)
-5) you now have a shell you can run commands in
-
-Then follow the instructions here: https://github.com/applefritter-inc/BadApple-icarus?tab=readme-ov-file#2-usbless-method
-
-Full writeup: https://github.com/applefritter-inc/BadApple
+1) Go to chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/manifest.json
+2) Ctrl + p, then click More settings. Switch both Margins and Scale from Default to Custom. Set Scale to 200.
+3) Bring the dotted-blue box borders: right to completely left; down to completely up. (This makes it so a few pages makes a lot more than it should).
+4) Open chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/main.js in a new tab
+5) ctrl + p, then wait until 203,000≈ pages appear in the top right corner.
+6) ↻ , and while it is refreshing, two-finger-click/right-click the current tab bar. Click Duplicate. Then open chrome://extensions/?id=adkcpkpghahmbopkjchobieckeoaoeem into a completely new tab
+7) Click Allow access to file URLs and the duplicated tab will close automatically. Lightspeed will now be forced to read 2(203,106) pages of its own data, rendering it useless. You are now able to close all tabs.
 
 ## Icarus
 An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
@@ -107,6 +99,23 @@ Theoretically it should work on all FCPS chromebooks, and some people have actua
 `nissa` chromebooks (the G11 ones) *might* not work. Don't come back here bitching about it.
 
 Full writeup and instructions are here: https://br1ck.vercel.app/
+
+## BadApple (pretty sure we don't have miniOS lmfao)
+Basically an exploit that does the same thing that sh1mmer does but for keyrolled boards like `nissa` (the `yavijo` chromebooks!)
+
+WILL NOT WORK IF YOU HAVE Kv5!
+
+How it works:
+
+1) enter developer mode with ESC+REFRESH+POWER and CTRL+D
+2) when you reach the block screen, press ESC+REFRESH+POWER again
+3) select Internet Recovery
+4) when miniOS loads in, press CTRL+ALT+REFRESH(open the VT3)
+5) you now have a shell you can run commands in
+
+Then follow the instructions here: https://github.com/applefritter-inc/BadApple-icarus?tab=readme-ov-file#2-usbless-method
+
+Full writeup: https://github.com/applefritter-inc/BadApple
 
 ## SuzyQ cable exploit (requires unenrollment)
 Full explanation here: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html and here https://docs.mrchromebox.tech/images/wp/Drawman_wp.jpg
