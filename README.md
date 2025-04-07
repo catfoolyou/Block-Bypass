@@ -38,6 +38,24 @@ If something doesnt work for some reason, it *MIGHT* be because you are unfortun
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
+## Lightspeed killer (LTMEAT print) - NOT unenrollment!
+
+1) Open a new tab.
+2) Put chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/manifest.json in the URL bar BUT DO NOT PRESS ENTER (Don't open the page)
+3) Drag the tab to a new window, while dragging press enter to open the link.
+4) The link should open successfully.
+5) Ctrl + p, then click More settings. Switch both Margins and Scale from Default to Custom. Set Scale to 200.
+6) Bring the dotted-blue box borders: right to completely left; down to completely up. (This makes it so a few pages makes a lot more than it should).
+7) Open another tab
+8) Put chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/main.js in the URL bar BUT DO NOT PRESS ENTER (Don't open the page)
+9) Drag the tab to a new window, while dragging press enter to open the link.
+10) Immediately after opening it, drag the tab again, holding your mouse for 4-5 seconds. (This will bypass the second auto-close check)
+11) Drag it back into the window.
+12) ctrl + p, then wait until 203,000≈ pages appear in the top right corner.
+13) ↻ , and while it is refreshing, two-finger-click/right-click the current tab bar. Click Duplicate. Then open chrome://extensions/?id=adkcpkpghahmbopkjchobieckeoaoeem into a completely new tab
+14) Click Allow access to file URLs and the duplicated tab will close automatically. Lightspeed will now be forced to read 2(203,106) pages of its own data, rendering it useless. You are now able to close all tabs.
+
+
 ## Icarus
 An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
 
