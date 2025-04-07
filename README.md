@@ -38,19 +38,6 @@ If something doesnt work for some reason, it *MIGHT* be because you are unfortun
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
-## Lightspeed killer - NOT unenrollment!
-https://github.com/Blobby-Boi/LightSPED-Killer-Agent if `data:text` isnt blocked
-
-or use LTMEAT print:
-
-1) Go to chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/manifest.json
-2) Ctrl + p, then click More settings. Switch both Margins and Scale from Default to Custom. Set Scale to 200.
-3) Bring the dotted-blue box borders: right to completely left; down to completely up. (This makes it so a few pages makes a lot more than it should).
-4) Open chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/main.js in a new tab
-5) ctrl + p, then wait until 203,000≈ pages appear in the top right corner.
-6) ↻ , and while it is refreshing, two-finger-click/right-click the current tab bar. Click Duplicate. Then open chrome://extensions/?id=adkcpkpghahmbopkjchobieckeoaoeem into a completely new tab
-7) Click Allow access to file URLs and the duplicated tab will close automatically. Lightspeed will now be forced to read 2(203,106) pages of its own data, rendering it useless. You are now able to close all tabs.
-
 ## Icarus
 An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
 
@@ -215,7 +202,11 @@ https://chromium.googlesource.com/chromiumos/platform/factory_installer/+/HEAD/R
 A series of exploits for different ChromeOS versions, some might be outdated or patched.
 Some might work, I didnt test any of this
 
-https://github.com/S-PScripts/chromebook-utilities/tree/main/Exploits
+https://github.com/Burvyn/Corellium
+
+**Unenrollment:**
+
+https://github.com/Burvyn/Corellium/tree/main/Exploits%20and%20Tools
 
 ## Chromebook specs
 FCPS chromebook specs:
@@ -258,10 +249,6 @@ Windows PCs and laptops have a bundled installation of Java 17, located in `C:/P
 
 The following [script](https://github.com/catfoolyou/EaglerGradleScripts/blob/main/EaglerGradle.bat) is linked as an example of setting up gradle to work with a bundled Java installation. The same repo contains modified `build.gradle` and `gradle.properties` for compiling Java applications with a bundled installation.
 
-# Chromebook games
-Again, use a [proxy](https://github.com/catfoolyou/Ultraviolet-App) to access blocked websites. Be advised that games (and sometimes yt) are somewhat laggy over a proxy connection.
-
-If [catfoolyou.github.io](https://catfoolyou.github.io) is blocked, a mirror of my website is available [here](https://eldritchdev3.github.io/Website-v2/)
 
 ### Eaglercraft and FNAW:
 The latest 1.5.2 and 1.8.8 offline clients are available for download, as well as Five Nights at Winston's.
