@@ -94,3 +94,19 @@ cryptohome --action=remove_firmware_management_parameters
 ```
 
 The last command will error because my chromebook died lolol dw i'll finish this writeup once I get my charger back
+
+## The rest of the process
+
+**Completely usure if this section even works, proceed at your own risk**   ⠀  -Catfoolyou
+
+Run one more command:
+```
+crossystem dev_boot_usb=1
+```
+Reconnect the battery to the motherboard, and run gsctool -a -o. Follow the prompts to push the power button and the system should automatically reboot. When the device turns back on, re-open the recovery menu and re-enable devmode.
+
+Afterward, go to the VT2 console, run gsctool -a -I AllowUnverifiedRo:always, and the device should be unenrolled.
+
+![image](https://github.com/user-attachments/assets/f24fbdf5-5e84-4ab3-90f7-e7a71e1f383a)
+
+
