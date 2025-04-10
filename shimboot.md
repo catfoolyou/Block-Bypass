@@ -27,7 +27,7 @@ Remember the name of the chromebook! You will need it later.
 #### What you'll need:
 - 5GB or larger USB flash drive or SD Card (I recommend over 16GB if you want to use linux)
 - Another Computer
-- [Chromebook Recovery Utility](abc) (optional, use BalenaEtcher, Rufus, or `dd` if you can't use it)
+- [Chromebook Recovery Utility](https://chromewebstore.google.com/detail/chromebook-recovery-utili/pocpnlppkickgojjlmhdmidojbmbodfm?hl=en) (optional, use BalenaEtcher, Rufus, or `dd` if you can't use it)
 - Shimboot Images (about 5GB, scroll down for download)
 
 ### Preparing the USB Drive/SD Card
@@ -70,7 +70,7 @@ From here, you have two options:
 I highly recommend choosing the first option.
 With either option, you can go back to the enrolled ChromeOS at any time by simply restarting.
 
-If you chose the second option, follow the guide [here](abc). This writeup will not cover it.
+If you chose the second option, follow the guide [here](https://github.com/ading2210/shimboot?tab=readme-ov-file#booting-the-image). This writeup will not cover it.
 
 To boot into spoofed unenrolled ChromeOS, press these keys in order:
 
