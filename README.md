@@ -28,13 +28,13 @@ Most people at FCPS have been switched to chromebooks, which are much harder to 
 
 G10 chromebooks (drawper) have cr50 chips, which the G11 ones (yavijo) have might, but probably dont have ti50, making it harder to unenroll if you have a ti50.  
 
-According to a high-level leak from inside DIT, *MOST*, if not all FCPS chromebooks have Ti50. Highschool Drawper chromebooks have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20G10,CR50%20(SuzyQ)%2C%20jumper), while the middle school Yavijo ones are Ti50 *capable*, but we have older models that have cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20inch,CR50/Ti50%20(SuzyQ)).
+According to a high-level leak from inside DIT, *MOST*, if not all FCPS chromebooks have Cr50. Highschool Drawper chromebooks ALL have Cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20G10,CR50%20(SuzyQ)%2C%20jumper), while the middle school Yavijo ones are Ti50 *capable*, but we have older models that have Cr50 chips [(proof)](https://docs.mrchromebox.tech/docs/supported-devices.html#:~:text=HP%20Fortis%2014%20inch,CR50/Ti50%20(SuzyQ)).
 
 **The problem is that some middle schools have gotten Ti50 `yavijo` chromebooks in later deployments, so that will depend on your school**
 
 See the Pencil Sharpener section below for a full explanation of this exploit
 
-If something doesnt work for some reason, it *MIGHT* be because you are unfortunate enough to have a Ti50, in which case you are out of luck, unless you can BYOD.
+If something doesnt work for some reason, it *MIGHT* be because you are unfortunate enough to have a Ti50, in which case you are shit outta luck, unless you can BYOD.
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
@@ -59,13 +59,26 @@ To prevent admin from finding out about your unenrollment, use **fakemurk** or *
 ## Icarus
 An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
 
-Has not yet been tested, but it should work on FCPS chromebooks, since they have cr50 chips.
+Has not yet been tested, but it should work on FCPS chromebooks, since they have Cr50 chips.
+
+You will need to downgrade to v127 first, using recovery images from [chrome100](https://chrome100.dev/board/dedede) (this is for `drawper` chromebooks only, `yavijo` ones have `nissa` boards)
+
+1) Get a USB and burn the [recovery image](https://dl.google.com/dl/edgedl/chromeos/recovery/chromeos_15917.71.0_dedede_recovery_stable-channel_mp-v50.bin.zip) onto it (link is for v127 for `dedede`)
+2) ESC + POWER + REFRESH (you MIGHT need to do this twice (idk)), then follow instructions to recover from USB.
+3) Use the v127 USB from step 1 to recover and downgrade to v127
 
 You will need a shim prebuild for you chromebook for this exploit (from [here?](https://dl.fanqyxl.net/ChromeOS/Prebuilts/Icarus))
 
-1) Burn the shim onto a usb, then boot from it
-2) Run the server on a linux pc/laptop
-3) Connect to the wifi from your server, and the chromebook should unenroll
+1) Burn the shim onto a USB (find the one for your board)
+2) ESC + POWER + REFRESH, recover from USB, then boot from it
+3) Run the server on a linux pc/laptop ON THE SAME WIFI as the chromebook (i.e. school wifi)
+4) After rebooting into ChromeOS verified mode following using an Icarus shim, do not click "continue". Instead, manually open the Network Configuration by clicking on the bottom-right icons which contain the time, WiFi, and Battery status.
+5) Once in Network Configuration, connect to your WiFi and enter the proxy settings.
+6) Set "Connection Type" to Manual
+7) Set the "Secure HTTP" IP address to the IP Icarus Lite gives you
+8) Set the "Secure HTTP" port to the port Icarus Lite gives you
+9) Click "Save"
+10) Resume the ChromeOS setup process as normal and Icarus Lite should unenroll you.
 
 Full explanation and writeup available here: https://github.com/fanqyxl/icarus?tab=readme-ov-file
 
