@@ -38,9 +38,19 @@ If something doesnt work for some reason, it *MIGHT* be because you are unfortun
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
-## Lightspeed killer (LTMEAT print) - NOT unenrollment!
+## Lightspeed killer mark II (LTMEAT print has been patched)
 
-1) Open a new tab.
+1) Go to [`chrome://indexeddb-internals/`](chrome://indexeddb-internals/)
+2) Press ctrl+f and search for `adkcpkpghahmbopkjchobieckeoaoeem`
+3) click on "force close"
+
+If this is blocked and/or does not work
+
+1) Go on `chrome://serviceworker-internals/`
+2) ctrl+f and search for `adkcpkpghahmbopkjchobieckeoaoeem`
+3) click stop, this may or may not work
+
+~~1) Open a new tab.
 2) Put `chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/manifest.json` in the URL bar BUT DO NOT PRESS ENTER (Don't open the page)
 3) Drag the tab to a new window, while dragging press enter to open the link.
 4) The link should open successfully.
@@ -53,8 +63,7 @@ To prevent admin from finding out about your unenrollment, use **fakemurk** or *
 11) Drag it back into the window.
 12) ctrl + p, then wait until 203,000≈ pages appear in the top right corner.
 13) ↻ , and while it is refreshing, two-finger-click/right-click the current tab bar. Click Duplicate. Then open `chrome://extensions/?id=adkcpkpghahmbopkjchobieckeoaoeem` into a completely new tab
-14) Click Allow access to file URLs and the duplicated tab will close automatically. Lightspeed will now be forced to read 2(203,106) pages of its own data, rendering it useless. You are now able to close all tabs.
-
+14) Click Allow access to file URLs and the duplicated tab will close automatically. Lightspeed will now be forced to read 2(203,106) pages of its own data, rendering it useless. You are now able to close all tabs.~~
 
 ## Icarus
 An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
@@ -63,9 +72,13 @@ Has not yet been tested, but it should work on FCPS chromebooks, since they have
 
 You will need to downgrade to v127 first, using recovery images from [chrome100](https://chrome100.dev/board/dedede) (this is for `drawper` chromebooks only, `yavijo` ones have `nissa` boards)
 
+To burn shims, use BalenaEtcher
+
 1) Get a USB and burn the [recovery image](https://dl.google.com/dl/edgedl/chromeos/recovery/chromeos_15917.71.0_dedede_recovery_stable-channel_mp-v50.bin.zip) onto it (link is for v127 for `dedede`)
-2) ESC + POWER + REFRESH (you MIGHT need to do this twice (idk)), then follow instructions to recover from USB.
-3) Use the v127 USB from step 1 to recover and downgrade to v127
+2) ESC + POWER + REFRESH, then hit CTRL+D
+3) It will say something about returning to secure mode, do NOT press cancel, instead press ESC + POWER + REFRESH **again**
+4) select recover from USB and follow instructions to recover from USB
+5) Use the v127 USB from step 1 to recover and downgrade to v127
 
 You will need a shim prebuild for you chromebook for this exploit (from [here?](https://dl.fanqyxl.net/ChromeOS/Prebuilts/Icarus))
 
