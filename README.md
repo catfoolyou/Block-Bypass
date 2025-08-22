@@ -38,39 +38,12 @@ If something doesnt work for some reason, it *MIGHT* be because you are unfortun
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
-## Lightspeed killer mark II (LTMEAT print has been patched)
-
-1) Go to [`chrome://indexeddb-internals/`](chrome://indexeddb-internals/)
-2) Press ctrl+f and search for `adkcpkpghahmbopkjchobieckeoaoeem`
-3) click on "force close"
-
-If this is blocked and/or does not work
-
-1) Go on `chrome://serviceworker-internals/`
-2) ctrl+f and search for `adkcpkpghahmbopkjchobieckeoaoeem`
-3) click stop, this may or may not work
-
-~~1) Open a new tab.
-2) Put `chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/manifest.json` in the URL bar BUT DO NOT PRESS ENTER (Don't open the page)
-3) Drag the tab to a new window, while dragging press enter to open the link.
-4) The link should open successfully.
-5) Ctrl + p, then click More settings. Switch both Margins and Scale from Default to Custom. Set Scale to 200.
-6) Bring the dotted-blue box borders: right to completely left; down to completely up. (This makes it so a few pages makes a lot more than it should).
-7) Open another tab
-8) Put `chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/main.js` in the URL bar BUT DO NOT PRESS ENTER (Don't open the page)
-9) Drag the tab to a new window, while dragging press enter to open the link.
-10) Immediately after opening it, drag the tab again, holding your mouse for 4-5 seconds. (This will bypass the second auto-close check)
-11) Drag it back into the window.
-12) ctrl + p, then wait until 203,000≈ pages appear in the top right corner.
-13) ↻ , and while it is refreshing, two-finger-click/right-click the current tab bar. Click Duplicate. Then open `chrome://extensions/?id=adkcpkpghahmbopkjchobieckeoaoeem` into a completely new tab
-14) Click Allow access to file URLs and the duplicated tab will close automatically. Lightspeed will now be forced to read 2(203,106) pages of its own data, rendering it useless. You are now able to close all tabs.~~
-
 ## Icarus
 An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
 
 Has not yet been tested, but it should work on FCPS chromebooks, since they have Cr50 chips.
 
-You will need to downgrade to v127 first, using recovery images from [chrome100](https://chrome100.dev/board/dedede) (this is for `drawper` chromebooks only, `yavijo` ones have `nissa` boards)
+You will need to downgrade to v127 first, using recovery images from [cros.download](https://cros.download/recovery/dedede) (this is for `drawper` chromebooks only, `yavijo` ones have `nissa` boards)
 
 To burn shims, use BalenaEtcher
 
@@ -187,13 +160,13 @@ To prevent most exploits being patched, you can downgrade both chrome version an
 
 Use KVS, with a full writeup and instructions available here: https://github.com/kxtzownsu/KVS
 
-Get images from chrome100.dev
+Get images from cros.download
 
 G11 Chromebook: `nissa`
 
 G10 Chromebook: `dedede`
 
-Full instructions are available here: https://chrome100.dev/guide
+Full instructions are available here: https://chrome100.dev/guide (gone)
 
 ## GBB flags (requires unenrollment)
 
@@ -222,18 +195,22 @@ Instructions are available here: (I am too lazy to make a proper writeup)
 
 https://github.com/BinBashBanana/badrecovery
 
-## Webview exploit
-A random hole in chrome login that allows for unrestriced browsing (one tab only)
+## Lightspeed LTMEAT shit (patched I think)
 
-1) Add an account to chrome or go to chrome://chrome-signin on a chromebook
-2) Enter `google@d11.org` as the email and complete the captcha/security check
-3) Click sign-in options
-4) When prompted, click Sign in with Github
-5) Click on Docs
-6) Scroll to the bottom and click on Pricing
-7) In the search bar type "google"
-8) In the right sidebar click on `google.com`
-9) You now have a tab that is unaffected by any extensions
+1) Open a new tab.
+2) Put `chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/manifest.json` in the URL bar BUT DO NOT PRESS ENTER (Don't open the page)
+3) Drag the tab to a new window, while dragging press enter to open the link.
+4) The link should open successfully.
+5) Ctrl + p, then click More settings. Switch both Margins and Scale from Default to Custom. Set Scale to 200.
+6) Bring the dotted-blue box borders: right to completely left; down to completely up. (This makes it so a few pages makes a lot more than it should).
+7) Open another tab
+8) Put `chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/main.js` in the URL bar BUT DO NOT PRESS ENTER (Don't open the page)
+9) Drag the tab to a new window, while dragging press enter to open the link.
+10) Immediately after opening it, drag the tab again, holding your mouse for 4-5 seconds. (This will bypass the second auto-close check)
+11) Drag it back into the window.
+12) ctrl + p, then wait until 203,000≈ pages appear in the top right corner.
+13) ↻ , and while it is refreshing, two-finger-click/right-click the current tab bar. Click Duplicate. Then open `chrome://extensions/?id=adkcpkpghahmbopkjchobieckeoaoeem` into a completely new tab
+14) Click Allow access to file URLs and the duplicated tab will close automatically. Lightspeed will now be forced to read 2(203,106) pages of its own data, rendering it useless. You are now able to close all tabs.
 
 ## RMA shims
 Misc. info and documentation on RMA shims
@@ -247,9 +224,7 @@ A series of exploits for different ChromeOS versions, some might be outdated or 
 Some might work, I didnt test any of this
 
 https://github.com/Burvyn/Corellium
-
-**Unenrollment:**
-
+and
 https://github.com/Burvyn/Corellium/tree/main/Exploits%20and%20Tools
 
 ## Chromebook specs
@@ -261,7 +236,7 @@ HP specs sheet: https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c07811220
 HP specs on website https://support.hp.com/us-en/document/ish_5492565-5492609-16
 
 FCPS chromebook board and shims (recovery images):
-https://chrome100.dev/board/dedede
+[https://chrome100.dev/board/dedede](https://cros.download/recovery/dedede)
 
 # BYOD shits and bypasses
 
@@ -273,7 +248,9 @@ Based on the recent changes pushed by FCPS, the best way to bypass their restric
 To properly do BYOD, you *probably* shouldn't use the FCPS provided installer as your go-to option. Instead, use the wifi passwords in this repo to connect to their wifi directly (if that works).
 The certs that I managed to get my hands on may or may not work. Afaik it depends on the computer and/or the OS.
 
-To use the installer, sign in a GUEST, NOT with your FCPS username. Download the certs manually and install as per the instructions provided. DO NOT use `2.2.2.2`, use `https://xprsscnctvm.fcps.edu/enroll/FairfaxCountyPublicSchools/Production/reset` instead.
+To use the installer, sign in a GUEST, NOT with your FCPS username. Download the certs manually and install as per the instructions provided. Use `https://xprsscnctvm.fcps.edu/enroll/FairfaxCountyPublicSchools/Production/reset`
+
+See below for unrestricted internet:
 
 ## Chrome DNS (BYOD only)
 
@@ -293,9 +270,8 @@ Windows PCs and laptops have a bundled installation of Java 17, located in `C:/P
 
 The following [script](https://github.com/catfoolyou/EaglerGradleScripts/blob/main/EaglerGradle.bat) is linked as an example of setting up gradle to work with a bundled Java installation. The same repo contains modified `build.gradle` and `gradle.properties` for compiling Java applications with a bundled installation.
 
-
 ### Eaglercraft and FNAW:
-The latest 1.5.2 and 1.8.8 offline clients are available for download, as well as Five Nights at Winston's.
+The latest 1.5.2, 1.6.4, 1.8.8 and 1.12.2 offline clients are available for download, as well as Five Nights at Winston's.
 
 ### Other games:
 Doom, Retal, Quake, Slope, Bananabread and all of the other games that must run in a web environment cannot be run locally. Might migrate my site soon.
