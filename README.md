@@ -38,6 +38,22 @@ If something doesnt work for some reason, it *MIGHT* be because you are unfortun
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
+## sh1ttyOOBE
+
+1) Powerwash your Chromebook
+2) On the "welcome to your Chromebook" screen wait until you see the quick set up with android button (DO NOT PRESS GET STARTED IF IT DOESN'T SHOW IMMEDIATELY), then press the button (this should be inferred, apparntly some people are to stupid for this)
+3) Hit CTRL+ALT+SHIFT+R and click "cancel"
+4) Click "Enter your google account email and password" it should say to connect to a network
+5) Open quick settings from the bottom right and connect to a network
+
+Unsure if this works, gonna need to get my hands on a school cb to see for myself
+
+## Badbr0ker
+Basically BadRecovery for kv5 or something idk
+
+Basically you do sh1ttyOOBE (see above), then recover with an image made from the below prebuilds:
+https://github.com/crosbreaker/badbr0ker?tab=readme-ov-file#prebuilts
+
 ## Icarus
 An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
 
