@@ -48,6 +48,7 @@ To prevent admin from finding out about your unenrollment, use **fakemurk** or *
 
 Unsure if this works, gonna need to get my hands on a school cb to see for myself
 
+Credit: [crosbreaker](https://github.com/crosbreaker/sh1ttyOOBE)
 ## Badbr0ker
 Basically BadRecovery for kv5 or something idk
 
