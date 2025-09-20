@@ -261,8 +261,9 @@ Based on the recent changes pushed by FCPS, the best way to bypass their restric
 
 **You can also do this if you unenrolled your chromebook or flashed a Windows laptop (if you have one somehow)**
 
-To properly do BYOD, you *probably* shouldn't use the FCPS provided installer as your go-to option. Instead, use the wifi passwords in this repo to connect to their wifi directly (if that works).
-The certs that I managed to get my hands on may or may not work. Afaik it depends on the computer and/or the OS.
+To properly do BYOD, you *probably* shouldn't use the FCPS provided installer as your go-to option. Instead, connect to Fairfax directly with the username `2134tdv` and password `putinIT4u`. If you are on a chromebook, make sure you have the following settings:  
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/288b11ca-32f3-4746-9326-d386080b8371" />
+
 
 To use the installer, sign in a GUEST, NOT with your FCPS username. Download the certs manually and install as per the instructions provided. Use `https://xprsscnctvm.fcps.edu/enroll/FairfaxCountyPublicSchools/Production/reset`
 
