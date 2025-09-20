@@ -262,20 +262,8 @@ Based on the recent changes pushed by FCPS, the best way to bypass their restric
 **You can also do this if you unenrolled your chromebook or flashed a Windows laptop (if you have one somehow)**
 
 To properly do BYOD, you *probably* shouldn't use the FCPS provided installer as your go-to option. Instead, connect to Fairfax directly with the username `2134tdv` and password `putinIT4u`. If you are on a chromebook, make sure you have the following settings:  
-<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/288b11ca-32f3-4746-9326-d386080b8371" />
-
-
-To use the installer, sign in a GUEST, NOT with your FCPS username. Download the certs manually and install as per the instructions provided. Use `https://xprsscnctvm.fcps.edu/enroll/FairfaxCountyPublicSchools/Production/reset`
-
-See below for unrestricted internet:
-
-## Chrome DNS (BYOD only)
-
-If you are bringing your own computer, you can do this to prevent sites being blocked
-
-[Explanation for dumbasses like me](https://simpledns.plus/kb/195-how-to-enable-dns-over-https-doh-in-chrome)
-
-![image](https://github.com/user-attachments/assets/9bcbfb46-ba32-4f2e-a4c4-6a0c6bf86684)
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/288b11ca-32f3-4746-9326-d386080b8371" />  
+This will still allow teachers to see your screen when using Lightspeed Classroom on the school profile, but will ensure unrestricted internet access.  
 
 # Windows laptops and PCs
 
