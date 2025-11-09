@@ -60,6 +60,8 @@ https://github.com/crosbreaker/badbr0ker?tab=readme-ov-file#prebuilts
 
 ## Skiovox for ChromeOS v141
 
+Explanation/credit: https://github.com/AceOfSpades1061/skiovox-helper_mv3
+
 1) Find a website kiosk (one that shows the url while its loading.)
 2) Find some way to navigate away from the main page and to a search engine, like google.
 if you cannot find a webview for your kiosk join the crosbreaker discord server and go to the exploit thread and ask for a webview.
