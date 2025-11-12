@@ -38,6 +38,8 @@ If something doesnt work for some reason, it *MIGHT* be because you are unfortun
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
+Recovery images for the `drawper` chromebooks are available here [cros.download](https://cros.download/recovery/dedede)
+
 ## sh1ttyOOBE
 
 1) Powerwash your Chromebook
@@ -48,11 +50,38 @@ To prevent admin from finding out about your unenrollment, use **fakemurk** or *
 
 Unsure if this works, gonna need to get my hands on a school cb to see for myself
 
+Credit: [crosbreaker](https://github.com/crosbreaker/sh1ttyOOBE)
+
 ## Badbr0ker
 Basically BadRecovery for kv5 or something idk
 
 Basically you do sh1ttyOOBE (see above), then recover with an image made from the below prebuilds:
 https://github.com/crosbreaker/badbr0ker?tab=readme-ov-file#prebuilts
+
+## Skiovox for ChromeOS v141
+
+Explanation/credit: https://github.com/AceOfSpades1061/skiovox-helper_mv3
+
+1) Find a website kiosk (one that shows the url while its loading.)
+2) Find some way to navigate away from the main page and to a search engine, like google.
+if you cannot find a webview for your kiosk join the crosbreaker discord server and go to the exploit thread and ask for a webview.
+after getting on google (or any search engine) find some sort of text field, most likely the search bar.
+3) in the text field type the following HTML: 
+`<script>window.open("javascript:alert();");</script>`
+ and copy it to the clipboard.
+4) now get to [Real-time HTML editor](https://htmledit.squarefree.com/)
+5) Paste the HTML you copied and it should open a chrome window.
+
+**Common ways to navigate to google**
+
+Google Privacy and terms.
+- Scroll all the way down and click the grey google hyperlink at the bottom.
+
+XSS shit
+- a lot of educational websites are badly designed leading to xss. You can try just messing with random text input fields and seeing if you get anything.
+
+Captchas
+- Google captchas have a privacy and terms hyperlink, click it then follow method 1
 
 ## Icarus
 An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
