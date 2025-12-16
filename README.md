@@ -40,6 +40,37 @@ To prevent admin from finding out about your unenrollment, use **fakemurk** or *
 
 Recovery images for the `drawper` chromebooks are available here [cros.download](https://cros.download/recovery/dedede)
 
+## Quicksilver - unenrollment from v125 - v142 (kv4 - kv6)
+
+### How to use
+
+**If your device can boot SH1MMER (unkeyrolled):**
+Boot SH1MMER (make sure the version is from at least December 15th 2025)
+Open the payloads menu and run the quicksilver payload
+Go through setup, you should be unenrolled!!
+if your version is from before then, run this command in the bash shell: `vpd -i RW_VPD -s re_enrollment_key="$(openssl rand -hex 32)"`. it will say unable to write 'random state', ignore this
+
+**If your device cannot boot SH1MMER (keyrolled):**
+Do ⁠Sh1ttyExec
+Enable developer mode & then enter recovery mode again
+Boot a Badsh1mmer image and choose the quicksilver payload
+After it reboots, go through setup, you will be unenrolled!!
+If your Badsh1mmer is old and does not have the Quicksilver payload, run this command in the bash shell: `vpd -i RW_VPD -s re_enrollment_key="$(hexdump -e '1/1 "%02x"' -v -n 32 /dev/urandom)"`
+
+**This is persistent if you're on an unpatched version (<=v142)! If you're not updated & want to re-enroll run `vpd -i RW_VPD -d "re_enrollment_key"` in any shell
+Please look at ⁠stop accidental re enrollment and ⁠Setting GBB flags after unenrol…/ if you update to a patched version**
+
+### Credits
+Emery/emerwyi - discovery, testing
+
+Awen/qorsola - initial tester
+
+kxtz/kxtzownsu - more testing
+
+crosbreaker - badsh1mmer
+
+lxrd/SPIRAME  Sh1ttyExec
+
 ## sh1ttyOOBE
 
 1) Powerwash your Chromebook
