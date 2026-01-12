@@ -53,7 +53,7 @@ if your version is from before then, run this command in the bash shell: `vpd -i
 **If your device cannot boot SH1MMER (keyrolled):**
 Do ⁠Sh1ttyExec
 Enable developer mode & then enter recovery mode again
-Boot a Badsh1mmer image and choose the quicksilver payload
+Boot a [Badsh1mmer](https://github.com/crosbreaker/badsh1mmer) image and choose the quicksilver payload
 After it reboots, go through setup, you will be unenrolled!!
 If your Badsh1mmer is old and does not have the Quicksilver payload, run this command in the bash shell: `vpd -i RW_VPD -s re_enrollment_key="$(hexdump -e '1/1 "%02x"' -v -n 32 /dev/urandom)"`
 
@@ -74,7 +74,7 @@ lxrd/SPIRAME  Sh1ttyExec
 ## sh1ttyOOBE
 
 1) Powerwash your Chromebook
-2) On the "welcome to your Chromebook" screen wait until you see the quick set up with android button (DO NOT PRESS GET STARTED IF IT DOESN'T SHOW IMMEDIATELY), then press the button (this should be inferred, apparntly some people are to stupid for this)
+2) On the "welcome to your Chromebook" screen wait until you see the quick set up with android button (DO NOT PRESS GET STARTED IF IT DOESN'T SHOW IMMEDIATELY), then press the button (this should be inferred, apparently some people are to stupid for this)
 3) Hit CTRL+ALT+SHIFT+R and click "cancel"
 4) Click "Enter your google account email and password" it should say to connect to a network
 5) Open quick settings from the bottom right and connect to a network
