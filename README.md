@@ -38,7 +38,19 @@ If something doesnt work for some reason, it *MIGHT* be because you are unfortun
 
 To prevent admin from finding out about your unenrollment, use **fakemurk** or **murkmod** (recommended) to fake enrollment. See the corresponding section below for more details.
 
-Recovery images for the `drawper` chromebooks are available here [cros.download](https://cros.download/recovery/dedede)
+Recovery images for the `drawper` chromebooks are available here [cros.download](https://cros.download/recovery/dedede) or here [https://dl.crosbreaker.dev/recovery-images/dedede](https://dl.crosbreaker.dev/recovery-images/dedede)
+
+## Mercurial (kernver 7 unenrollment) (universal)
+
+Enter recovery mode and flash a USB with a recovery image corresponding to your device, then plug it in. [https://dl.crosbreaker.dev/recovery-images](https://dl.crosbreaker.dev/recovery-images/dedede)
+
+Wait until it reaches the "Your device is finishing an update. Please do not turn off your device". You need to press power + refresh 5-15 seconds after this
+
+If rebooted at the correct time, and the device boots successfully, the FWMP space will be cleared and you can boot SH1MMER to clear block_devmode from VPD/crossystem. If you're on a keyrolled device, you can boot a post-keyroll shim and use the "Reset TPM" option
+
+This is a bit inconsistent and might take a few tries, it varies per device
+
+Credit: [Falcon Neo, crosbreaker](https://discord.com/channels/1375357349425971231/1384428074161930332/threads/1477549772356321372)
 
 ## Quicksilver - unenrollment from v125 - v142 (kv4 - kv6)
 
@@ -89,63 +101,6 @@ Basically BadRecovery for kv5 or something idk
 Basically you do sh1ttyOOBE (see above), then recover with an image made from the below prebuilds:
 https://github.com/crosbreaker/badbr0ker?tab=readme-ov-file#prebuilts
 
-## Skiovox for ChromeOS v141
-
-Explanation/credit: https://github.com/AceOfSpades1061/skiovox-helper_mv3
-
-1) Find a website kiosk (one that shows the url while its loading.)
-2) Find some way to navigate away from the main page and to a search engine, like google.
-if you cannot find a webview for your kiosk join the crosbreaker discord server and go to the exploit thread and ask for a webview.
-after getting on google (or any search engine) find some sort of text field, most likely the search bar.
-3) in the text field type the following HTML: 
-`<script>window.open("javascript:alert();");</script>`
- and copy it to the clipboard.
-4) now get to [Real-time HTML editor](https://htmledit.squarefree.com/)
-5) Paste the HTML you copied and it should open a chrome window.
-
-**Common ways to navigate to google**
-
-Google Privacy and terms.
-- Scroll all the way down and click the grey google hyperlink at the bottom.
-
-XSS shit
-- a lot of educational websites are badly designed leading to xss. You can try just messing with random text input fields and seeing if you get anything.
-
-Captchas
-- Google captchas have a privacy and terms hyperlink, click it then follow method 1
-
-## Icarus
-An exploit that allows you to unenroll by managing the chromebook from an arbitrary device.
-
-Has not yet been tested, but it should work on FCPS chromebooks, since they have Cr50 chips.
-
-You will need to downgrade to v127 first, using recovery images from [cros.download](https://cros.download/recovery/dedede) (this is for `drawper` chromebooks only, `yavijo` ones have `nissa` boards)
-
-To burn shims, use BalenaEtcher
-
-1) Get a USB and burn the [recovery image](https://dl.google.com/dl/edgedl/chromeos/recovery/chromeos_15917.71.0_dedede_recovery_stable-channel_mp-v50.bin.zip) onto it (link is for v127 for `dedede`)
-2) ESC + POWER + REFRESH, then hit CTRL+D
-3) It will say something about returning to secure mode, do NOT press cancel, instead press ESC + POWER + REFRESH **again**
-4) select recover from USB and follow instructions to recover from USB
-5) Use the v127 USB from step 1 to recover and downgrade to v127
-
-You will need a shim prebuild for you chromebook for this exploit (from [here?](https://dl.fanqyxl.net/ChromeOS/Prebuilts/Icarus))
-
-1) Burn the shim onto a USB (find the one for your board)
-2) ESC + POWER + REFRESH, recover from USB, then boot from it
-3) Run the server on a linux pc/laptop ON THE SAME WIFI as the chromebook (i.e. school wifi)
-4) After rebooting into ChromeOS verified mode following using an Icarus shim, do not click "continue". Instead, manually open the Network Configuration by clicking on the bottom-right icons which contain the time, WiFi, and Battery status.
-5) Once in Network Configuration, connect to your WiFi and enter the proxy settings.
-6) Set "Connection Type" to Manual
-7) Set the "Secure HTTP" IP address to the IP Icarus Lite gives you
-8) Set the "Secure HTTP" port to the port Icarus Lite gives you
-9) Click "Save"
-10) Resume the ChromeOS setup process as normal and Icarus Lite should unenroll you.
-
-Full explanation and writeup available here: https://github.com/fanqyxl/icarus?tab=readme-ov-file
-
-Important files: https://git.kxtz.dev/kxtzownsu/Icarus-Lite.git
-
 ## Pencil sharpener (ti50 only)
 Full writeup: https://github.com/truekas/PencilSharpener/tree/main
 
@@ -170,65 +125,6 @@ Shimboot is an exploit based on sh1mmer that boots a linux distribution off a US
 FCPS High School chromebooks (`drawper`) have NOT been tested with shimboot yet.
 
 Full writeup is available here: https://github.com/catfoolyou/Block-Bypass/blob/main/shimboot.md
-
-## Br1ck
-It is capable of unenrolling all devices with a Cr50 chip on the latest version, v130. It has a low chance of being patched without a release of a new Chromebook model.
-
-Theoretically it should work on all FCPS chromebooks, and some people have actually used it successfully.
-
-`nissa` chromebooks (the G11 ones) *might* not work. Don't come back here bitching about it.
-
-Full writeup and instructions are here: https://br1ck.vercel.app/
-
-## BadApple (pretty sure we don't have miniOS lmfao)
-Basically an exploit that does the same thing that sh1mmer does but for keyrolled boards like `nissa` (the `yavijo` chromebooks!)
-
-WILL NOT WORK IF YOU HAVE Kv5!
-
-How it works:
-
-1) enter developer mode with ESC+REFRESH+POWER and CTRL+D
-2) when you reach the block screen, press ESC+REFRESH+POWER again
-3) select Internet Recovery
-4) when miniOS loads in, press CTRL+ALT+REFRESH(open the VT3)
-5) you now have a shell you can run commands in
-
-Then follow the instructions here: https://github.com/applefritter-inc/BadApple-icarus?tab=readme-ov-file#2-usbless-method
-
-Full writeup: https://github.com/applefritter-inc/BadApple
-
-## SuzyQ cable exploit (requires unenrollment)
-Full explanation here: https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html and here https://docs.mrchromebox.tech/images/wp/Drawman_wp.jpg
-
-This will allow you to disable Hardware WP without opening your device, and this may not work on all devices. You also need to be unenrolled first or have FWMP off with Developer Mode on.
-
-Please note to do this Kajig you need to own a SuzyQ cable or adapter, I won't be guiding you on where to buy one but if you would like to make one here are some schematics:  https://cdn.sparkfun.com/assets/9/e/f/8/2/951-00273-01_20180607_suzyqable_SCH_1.pdf
-
-Now that you got your SuzyQ, here's what you do next.
-
-Open a root shell on your Chromebook, this can be on a shim or within crosh, doesn't matter
-
-Run `gsctool -a -o`, whenever it tells you to Press PP, press the power button
-
-At the end of that process it'll restart and you'll be out of Developer Mode, turn it back on and head back to the terminal
-
-Plug in your SuzyQ, on most devices you'd use the Right USB C port and then plug the USB A in anywhere, try your other ports if that doesn't work for you.
-
-Once it's plugged in, in the `lsusb` command you should see the CR50 with an `18d1:5014` USB ID, if you don't see this try replugging.
-
-Now that you see that, make sure that the TTY is open via running `ls /dev/ttyUSB*`, you should see TTY 0, 1, and 2.
-
-To disable WP, run each of these one by one
-`echo "wp false" > /dev/ttyUSB0`
-
-`echo "wp false atboot" > /dev/ttyUSB0`
-
-`echo "ccd reset factory" > /dev/ttyUSB0`
-
-Reboot, then run
-`flashrom --wp-disable`
-
-Run `crossystem wpsw_cur`, this should output 0.
 
 ## Downgrading kernel versions (kernver version switcher), requires unenrollment
 
