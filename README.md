@@ -50,7 +50,7 @@ If rebooted at the correct time, and the device boots successfully, the FWMP spa
 
 This is a bit inconsistent and might take a few tries, it varies per device
 
-Credit: [Falcon Neo, crosbreaker](https://discord.com/channels/1375357349425971231/1384428074161930332/threads/1477549772356321372)
+Credit: [Falcon Neo, crosbreaker](https://discord.com/invite/crosbreaker-1375357349425971231)
 
 ## Quicksilver - unenrollment from v125 - v142 (kv4 - kv6)
 
